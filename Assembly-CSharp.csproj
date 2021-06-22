@@ -211,7 +211,8 @@
     <Compile Include="Assets\Oculus\Spatializer\scripts\ONSPVersion.cs" />
     <Compile Include="Assets\Oculus\Spatializer\scripts\OculusSpatializerUnity.cs" />
     <Compile Include="Assets\Oculus\Spatializer\scripts\helpers\ONSPReflectionZone.cs" />
-    <Compile Include="Assets\Rafting\Scripts\SqrParams.cs" />
+    <Compile Include="Assets\Resources\Rafting\Scripts\SqrParams.cs" />
+    <Compile Include="Assets\Resources\Rafting\Scripts\SqrSpawn.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Oculus\SampleFramework\Usage\HandsTrainExample\Shaders\XingLightShader.shader" />
