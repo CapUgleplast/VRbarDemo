@@ -56,6 +56,7 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\LowPolyWater_Pack\Scripts\Editor\GeneratePlane.cs" />
     <Compile Include="Assets\Oculus\AudioManager\Scripts\Audio\Editor\AudioImportPostProcessor.cs" />
     <Compile Include="Assets\Oculus\AudioManager\Scripts\Audio\Editor\AudioManagerInspector.cs" />
     <Compile Include="Assets\Oculus\AudioManager\Scripts\Audio\Editor\MinMaxPropertyDrawer.cs" />
@@ -81,6 +82,15 @@
     <Compile Include="Assets\Oculus\Spatializer\editor\ONSPPropagationMaterialEditor.cs" />
     <Compile Include="Assets\Oculus\Spatializer\editor\ONSPPropagationSerializationManager.cs" />
     <Compile Include="Assets\Oculus\Spatializer\editor\ONSPReflectionCustomGUI.cs" />
+    <Compile Include="Assets\VrTunnellingPro\Editor\VrTunnellingProEditorBase.cs" />
+    <Compile Include="Assets\VrTunnellingPro\Editor\VrTunnellingProEditorUtils.cs" />
+    <Compile Include="Assets\VrTunnellingPro\Editor\VrTunnellingProImageEditor.cs" />
+    <Compile Include="Assets\VrTunnellingPro\Editor\VrTunnellingProMobileEditor.cs" />
+    <Compile Include="Assets\VrTunnellingPro\Editor\VrTunnellingProPresetEditor.cs" />
+    <Compile Include="Assets\VrTunnellingPro\Editor\VrTunnellingProPresetEditorBase.cs" />
+    <Compile Include="Assets\VrTunnellingPro\Editor\VrTunnellingProPresetMobileEditor.cs" />
+    <Compile Include="Assets\VrTunnellingPro\Editor\VrtpEditorUtils.cs" />
+    <Compile Include="Assets\VrTunnellingPro\Editor\VrtpStyles.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

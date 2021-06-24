@@ -303,6 +303,7 @@ MonoBehaviour:
   OctopusChance: 20
   CrabChance: 40
   SqrSpeed: 7
+  DestroyDistance: 150
 --- !u!65 &5747224886433507788
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -312,7 +313,7 @@ BoxCollider:
   m_GameObject: {fileID: 7523338831345603113}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 45.08, y: 6.35, z: 1}
   m_Center: {x: 0, y: 2.31, z: -34.54}

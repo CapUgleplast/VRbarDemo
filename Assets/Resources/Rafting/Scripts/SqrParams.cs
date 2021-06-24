@@ -12,6 +12,7 @@ public class SqrParams : MonoBehaviour
     public GameObject rapid;
     public GameObject octopus;
     public GameObject crab;
+    
 
     public List<Transform> treeSpawn;
     public List<Transform> stoneSpawn;
@@ -21,7 +22,7 @@ public class SqrParams : MonoBehaviour
     public List<Transform> rapidSpawn;
     public List<Transform> octopusSpawn;
     public List<Transform> crabSpawn;
-   
+
 
     public bool treeON = false;
     public bool stoneON = false;
@@ -43,7 +44,8 @@ public class SqrParams : MonoBehaviour
 
     public int SqrSpeed = 0;
 
-    
+    public int DestroyDistance;
+
     // Start is called before the first frame update
     void Start() {
         int SpawnChance;
@@ -69,7 +71,7 @@ public class SqrParams : MonoBehaviour
 
         int SpawnPointChance;
         if (treeON == true) {
-            SpawnPointChance = Random.Range(0, treeSpawn.Count-1);
+            SpawnPointChance = Random.Range(0, treeSpawn.Count - 1);
             Instantiate(tree, treeSpawn[SpawnPointChance]);
         }
         if (stoneON == true) {
@@ -79,7 +81,7 @@ public class SqrParams : MonoBehaviour
             }
         }
         if (deerON == true) {
-            SpawnPointChance = Random.Range(0, deerSpawn.Count-1);
+            SpawnPointChance = Random.Range(0, deerSpawn.Count - 1);
             Instantiate(deer, deerSpawn[SpawnPointChance]);
         }
         if (rockON == true) {
@@ -89,34 +91,37 @@ public class SqrParams : MonoBehaviour
             }
         }
         if (swirlON == true) {
-            SpawnPointChance = Random.Range(0, swirlSpawn.Count-1);
+            SpawnPointChance = Random.Range(0, swirlSpawn.Count - 1);
             Instantiate(swirl, swirlSpawn[SpawnPointChance]);
         }
         if (rapidON == true) {
-            SpawnPointChance = Random.Range(0, rapidSpawn.Count-1);
+            SpawnPointChance = Random.Range(0, rapidSpawn.Count - 1);
             Instantiate(rapid, rapidSpawn[SpawnPointChance]);
         }
         if (octopusON == true) {
-            SpawnPointChance = Random.Range(0, octopusSpawn.Count-1);
+            SpawnPointChance = Random.Range(0, octopusSpawn.Count - 1);
             Instantiate(octopus, octopusSpawn[SpawnPointChance]);
         }
         if (crabON == true) {
-            SpawnPointChance = Random.Range(0, crabSpawn.Count-1);
+            SpawnPointChance = Random.Range(0, crabSpawn.Count - 1);
             Instantiate(crab, crabSpawn[SpawnPointChance]);
         }
 
-        
+
     }
 
     // Update is called once per frame
-    void Update()
-    {
-  
+    void Update() {
+        
+        if (Vector3.Distance(this.transform.position, new Vector3(0, 0, 0)) > DestroyDistance) 
+         {
+            Destroy(gameObject);
+         }
     }
     void FixedUpdate() {
-        // We need to keep the old y and z component if we want the object to still be affected by gravity and other things
-        GetComponent<Rigidbody>().velocity = new Vector3(GetComponent<Rigidbody>().velocity.x,  GetComponent<Rigidbody>().velocity.y, -SqrSpeed);
+       
+        GetComponent<Rigidbody>().velocity = new Vector3(GetComponent<Rigidbody>().velocity.x, GetComponent<Rigidbody>().velocity.y, -SqrSpeed);
     }
-    
-    
-}
+   
+    }
+
