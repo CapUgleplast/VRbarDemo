@@ -247,7 +247,7 @@ PlayerSettings:
   AndroidTargetArchitectures: 1
   AndroidSplashScreenScale: 0
   androidSplashScreen: {fileID: 0}
-  AndroidKeystoreName: C:/Demetrius/UnityProjects/VRbar/user.keystore
+  AndroidKeystoreName: C:/Piska/user_keystore.keystore
   AndroidKeyaliasName: key
   AndroidBuildApkPerCpuArchitecture: 0
   AndroidTVCompatibility: 0

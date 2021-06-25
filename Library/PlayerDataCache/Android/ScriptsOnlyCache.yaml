@@ -1,6 +1,14 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - Autohand.Demo.CubeBreak
+    - Autohand.Demo.XRHandControllerLink
+    - Autohand.Demo.XRTeleporterLink
+    - Autohand.Finger
+    - Autohand.Grabbable
+    - Autohand.Hand
+    - Autohand.HandStabilizer
+    - Autohand.Teleporter
     - LowPolyWater.LowPolyWater
     - ONSPSettings
     - Sigtrap.VrTunnellingPro.Tunnelling
@@ -28,6 +36,8 @@ ScriptsOnlyBuild:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
     - UnityEditor.TestTools.TestRunner.TestRun.TestJobDataHolder
+    UnityEngine.SpatialTracking.dll:
+    - UnityEngine.SpatialTracking.TrackedPoseDriver
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
     - UnityEngine.EventSystems.StandaloneInputModule
@@ -66,62 +76,68 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11614}
+      Script: {instanceID: 13424}
     - Class: 114
-      Script: {instanceID: 11780}
+      Script: {instanceID: 13586}
     - Class: 114
-      Script: {instanceID: 12334}
+      Script: {instanceID: 14130}
     - Class: 114
-      Script: {instanceID: 12414}
+      Script: {instanceID: 14200}
     - Class: 114
-      Script: {instanceID: 12526}
+      Script: {instanceID: 14208}
     - Class: 114
-      Script: {instanceID: 12682}
+      Script: {instanceID: 14316}
     - Class: 114
-      Script: {instanceID: 12918}
+      Script: {instanceID: 14472}
     - Class: 114
-      Script: {instanceID: 13038}
+      Script: {instanceID: 14702}
     - Class: 114
-      Script: {instanceID: 14096}
+      Script: {instanceID: 14818}
     - Class: 114
-      Script: {instanceID: 14174}
+      Script: {instanceID: 15858}
     - Class: 114
-      Script: {instanceID: 14196}
+      Script: {instanceID: 15936}
     - Class: 114
-      Script: {instanceID: 14254}
+      Script: {instanceID: 15958}
     - Class: 114
-      Script: {instanceID: 14626}
+      Script: {instanceID: 16012}
     - Class: 114
-      Script: {instanceID: 15372}
+      Script: {instanceID: 16376}
+    - Class: 114
+      Script: {instanceID: 42636}
+    - Class: 114
+      Script: {instanceID: 43912}
+    - Class: 114
+      Script: {instanceID: 43914}
+    - Class: 114
+      Script: {instanceID: 43934}
+    - Class: 114
+      Script: {instanceID: 43942}
+    - Class: 114
+      Script: {instanceID: 43946}
+    - Class: 114
+      Script: {instanceID: 43950}
+    - Class: 114
+      Script: {instanceID: 47476}
+    - Class: 114
+      Script: {instanceID: 47478}
     - Class: 115
+      Script: {instanceID: 0}
+    - Class: 120
+      Script: {instanceID: 0}
+    - Class: 134
       Script: {instanceID: 0}
     - Class: 135
       Script: {instanceID: 0}
     - Class: 136
+      Script: {instanceID: 0}
+    - Class: 137
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
     - Class: 196
       Script: {instanceID: 0}
   scriptHashData:
-  - hash:
-      serializedVersion: 2
-      Hash: 89f9a1b4c64db9559e39f4a2e3bfaadd
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.UI
-    className: Image
-  - hash:
-      serializedVersion: 2
-      Hash: aeb62f729c52c814dec86c47dcac1471
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.UI
-    className: Text
-  - hash:
-      serializedVersion: 2
-      Hash: aa88ae22474df55295327e4ee99e5a24
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.UI
-    className: Toggle
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -298,6 +314,12 @@ ScriptsOnlyBuild:
     className: SoundEmitter
   - hash:
       serializedVersion: 2
+      Hash: aeb62f729c52c814dec86c47dcac1471
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Text
+  - hash:
+      serializedVersion: 2
       Hash: 499fd23433e68e265d153aa6b95d0047
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -326,6 +348,12 @@ ScriptsOnlyBuild:
     assemblyName: Oculus.VR.dll
     namespaceName: 
     className: OVRControllerTest
+  - hash:
+      serializedVersion: 2
+      Hash: 89f9a1b4c64db9559e39f4a2e3bfaadd
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Image
   - hash:
       serializedVersion: 2
       Hash: 32c2e26363d3830b3fcd6735b46fef68
@@ -1774,6 +1802,12 @@ ScriptsOnlyBuild:
     className: StandaloneInputModule
   - hash:
       serializedVersion: 2
+      Hash: aa88ae22474df55295327e4ee99e5a24
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Toggle
+  - hash:
+      serializedVersion: 2
       Hash: 8220b46879dc5e37db1b940c938f5744
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -1826,7 +1860,175 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 1b10673a4589921a3ba62e8ebb0d9b37
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Autohand
+    className: Hand
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Autohand
+    className: HandStabilizer
+  - hash:
+      serializedVersion: 2
+      Hash: 2dc7782312f50c1db2e8b4c73d84ec86
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Autohand.Demo
+    className: ButtonDemoRespawn
+  - hash:
+      serializedVersion: 2
+      Hash: 4e332762e09c02e6d82285adaa37943f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Autohand.Demo
+    className: PhysicsLever
+  - hash:
+      serializedVersion: 2
+      Hash: 2088ad9d32c769e512dacd26289fb68f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Autohand
+    className: GrabbableThrowEvent
+  - hash:
+      serializedVersion: 2
+      Hash: 678cb9dfc28463871de1ef9118d7aead
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Autohand.Demo
+    className: FingerBend
+  - hash:
+      serializedVersion: 2
+      Hash: 56acaf0a46badf2d478a358a1420f213
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Autohand.Demo
+    className: MoverLever
+  - hash:
+      serializedVersion: 2
+      Hash: 3157574147b09882885874ac9173cee5
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Autohand
+    className: Finger
+  - hash:
+      serializedVersion: 2
+      Hash: 3b09e6abab82f25a1a611bef60dbf3a1
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Autohand.Demo
+    className: Pistol
+  - hash:
+      serializedVersion: 2
+      Hash: 100ebb34bdc460c8405366c590b68bea
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Autohand
+    className: GrabbablePose
+  - hash:
+      serializedVersion: 2
+      Hash: 0b6e1882a8572265c50303d0ff1ae648
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Autohand.Demo
+    className: ScaleHighlight
+  - hash:
+      serializedVersion: 2
+      Hash: ba34659dda7a21cdf6ae330042af661d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Autohand
+    className: Grabbable
+  - hash:
+      serializedVersion: 2
+      Hash: 8fb9747573f0305fee0091074983ae63
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Autohand
+    className: GrabbablePoint
+  - hash:
+      serializedVersion: 2
+      Hash: b9048d3760274b9fd3dc94b75b3d0f96
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Autohand.Demo
+    className: CubeBreak
+  - hash:
+      serializedVersion: 2
+      Hash: 8d5ad9e821bde317f3c240d26872178d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Autohand
+    className: PlacePoint
+  - hash:
+      serializedVersion: 2
+      Hash: d78bf6deedb6a57d10ed2f3ee314948f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Autohand
+    className: Teleporter
+  - hash:
+      serializedVersion: 2
+      Hash: 171a7ee4d3a7bcd2d2a398ebbc922a40
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Autohand.Demo
+    className: Smash
+  - hash:
+      serializedVersion: 2
+      Hash: 8251d48009c138b796204587fb1a4e13
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Autohand
+    className: GrabbablePoints
+  - hash:
+      serializedVersion: 2
+      Hash: d099565f811041da502f5749bcd459b4
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Autohand.Demo
+    className: ExplosionSource
+  - hash:
+      serializedVersion: 2
+      Hash: 77fb88c475e1ffd5979388d096290ad9
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Autohand.Demo
+    className: PhysicsButton
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Autohand
+    className: GrabbablePointBase
+  - hash:
+      serializedVersion: 2
+      Hash: ffd7b11c56ea05e520e76e0c09fd1527
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Autohand
+    className: GrabLock
+  - hash:
+      serializedVersion: 2
+      Hash: 3fd132acee8f01153a8358a8df43a2df
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Autohand.Demo
+    className: PhysicsMover
+  - hash:
+      serializedVersion: 2
+      Hash: a7643d3a3b6a84fb3f88989d737b6367
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Autohand.Demo
+    className: Smasher
+  - hash:
+      serializedVersion: 2
+      Hash: 5ac888b97fcc36bc899c2553e6f92206
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Autohand
+    className: GrabbableChild
+  - hash:
+      serializedVersion: 2
+      Hash: 4897f5a226d42459f106a93afe05a2dd
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Autohand.Demo
+    className: Spinner
+  - hash:
+      serializedVersion: 2
+      Hash: 0643f603a8416814e8c00f8276ec8a00
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Autohand.Demo
+    className: XRTeleporterLink
+  - hash:
+      serializedVersion: 2
+      Hash: b7344648d438733deaaa3044e221ca9f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Autohand.Demo
+    className: XRHandControllerLink
   platform: 13
   scenePathNames:
   - Assets/Resources/Rafting/Scenes/FuncTest.unity
-  playerPath: C:/Demetrius/UnityProjects/TunellingTest.apk
+  playerPath: C:/Piska/test5.apk
