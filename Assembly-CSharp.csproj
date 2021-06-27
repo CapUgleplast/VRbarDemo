@@ -56,6 +56,34 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\AutoHand\Examples\Scenes\XR\Scripts\XRHandControllerLink.cs" />
+    <Compile Include="Assets\AutoHand\Examples\Scenes\XR\Scripts\XRTeleporterLink.cs" />
+    <Compile Include="Assets\AutoHand\Examples\Scripts\Demo\ButtonDemoRespawn.cs" />
+    <Compile Include="Assets\AutoHand\Examples\Scripts\Demo\CubeBreak.cs" />
+    <Compile Include="Assets\AutoHand\Examples\Scripts\Demo\ExplosionSource.cs" />
+    <Compile Include="Assets\AutoHand\Examples\Scripts\Demo\FingerBend.cs" />
+    <Compile Include="Assets\AutoHand\Examples\Scripts\Demo\MoverLever.cs" />
+    <Compile Include="Assets\AutoHand\Examples\Scripts\Demo\PhysicsMover.cs" />
+    <Compile Include="Assets\AutoHand\Examples\Scripts\Demo\Pistol.cs" />
+    <Compile Include="Assets\AutoHand\Examples\Scripts\Demo\ScaleHighlight.cs" />
+    <Compile Include="Assets\AutoHand\Examples\Scripts\Demo\Smash.cs" />
+    <Compile Include="Assets\AutoHand\Examples\Scripts\Demo\Smasher.cs" />
+    <Compile Include="Assets\AutoHand\Examples\Scripts\Demo\Spinner.cs" />
+    <Compile Include="Assets\AutoHand\Scripts\Finger.cs" />
+    <Compile Include="Assets\AutoHand\Scripts\Gadgets\PhysicsButton.cs" />
+    <Compile Include="Assets\AutoHand\Scripts\Gadgets\PhysicsLever.cs" />
+    <Compile Include="Assets\AutoHand\Scripts\GrabLock.cs" />
+    <Compile Include="Assets\AutoHand\Scripts\Grabbable.cs" />
+    <Compile Include="Assets\AutoHand\Scripts\GrabbableChild.cs" />
+    <Compile Include="Assets\AutoHand\Scripts\GrabbablePoint.cs" />
+    <Compile Include="Assets\AutoHand\Scripts\GrabbablePointBase.cs" />
+    <Compile Include="Assets\AutoHand\Scripts\GrabbablePoints.cs" />
+    <Compile Include="Assets\AutoHand\Scripts\GrabbablePose.cs" />
+    <Compile Include="Assets\AutoHand\Scripts\GrabbableThrowEvent.cs" />
+    <Compile Include="Assets\AutoHand\Scripts\Hand.cs" />
+    <Compile Include="Assets\AutoHand\Scripts\HandStabilizer.cs" />
+    <Compile Include="Assets\AutoHand\Scripts\PlacePoint.cs" />
+    <Compile Include="Assets\AutoHand\Scripts\Teleporter.cs" />
     <Compile Include="Assets\LowPolyWater_Pack\Scripts\LowPolyWater.cs" />
     <Compile Include="Assets\Oculus\AudioManager\Scenes\Scripts\TestScript.cs" />
     <Compile Include="Assets\Oculus\AudioManager\Scripts\Audio\AmbienceEmitter.cs" />
@@ -237,6 +265,7 @@
     <None Include="Assets\VrTunnellingPro\Resources\Shaders\TunnellingVertexUtils.cginc" />
     <None Include="Assets\Oculus\Spatializer\Plugins\x86\AudioPluginOculusSpatializer.dll" />
     <None Include="Assets\Oculus\SampleFramework\Usage\DistanceGrab\Materials\CrosshairZCheat.shader" />
+    <None Include="Assets\AutoHand\Examples\Shaders\DoubleSided.shader" />
     <None Include="Assets\VrTunnellingPro\Resources\Shaders\Window.shader" />
     <None Include="Assets\Oculus\Spatializer\Plugins\x86_64\AudioPluginOculusSpatializer.dll" />
     <None Include="Assets\Oculus\Avatar\Resources\Materials\Version1.5\Avatar_Mobile_Loader.shader" />
@@ -275,6 +304,7 @@
     <None Include="Assets\VrTunnellingPro\Shaders\CageOpaqueFog.shader" />
     <None Include="Assets\Oculus\Avatar\Resources\Materials\AvatarSurfaceShaderSelfOccluding.shader" />
     <None Include="Assets\Oculus\SampleFramework\Core\HandsInteraction\Shaders\OculusSampleAlphaHandOutline.shader" />
+    <None Include="Assets\AutoHand\Examples\Shaders\Outline.shader" />
     <None Include="Assets\VrTunnellingPro\Shaders\CageTransparentFog.shader" />
     <None Include="Assets\Oculus\SampleFramework\Usage\HandsTrainExample\Shaders\OculusSampleTrainSmokeShader.shader" />
     <None Include="Assets\Oculus\SampleFramework\Usage\OVROverlayCanvas\Shaders\UI Prerendered Opaque.shader" />

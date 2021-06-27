@@ -42,7 +42,7 @@ public class SqrParams : MonoBehaviour
     public int OctopusChance;
     public int CrabChance;
 
-    public int SqrSpeed = 0;
+    public float SqrSpeed = 0;
 
     public int DestroyDistance;
 
@@ -112,15 +112,18 @@ public class SqrParams : MonoBehaviour
 
     // Update is called once per frame
     void Update() {
+        //transform.position += new Vector3(0, 0, SqrSpeed * (-0.01f));
         
         if (Vector3.Distance(this.transform.position, new Vector3(0, 0, 0)) > DestroyDistance) 
          {
             Destroy(gameObject);
          }
+
     }
     void FixedUpdate() {
-       
-        GetComponent<Rigidbody>().velocity = new Vector3(GetComponent<Rigidbody>().velocity.x, GetComponent<Rigidbody>().velocity.y, -SqrSpeed);
+        this.transform.Translate(Vector3.forward * SqrSpeed * -1f * Time.deltaTime);
+
+        //GetComponent<Rigidbody>().velocity = new Vector3(GetComponent<Rigidbody>().velocity.x, GetComponent<Rigidbody>().velocity.y, -SqrSpeed);
     }
    
     }
