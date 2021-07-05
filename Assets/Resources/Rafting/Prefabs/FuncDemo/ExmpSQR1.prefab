@@ -285,7 +285,7 @@ MonoBehaviour:
   RapidChance: 20
   OctopusChance: 20
   CrabChance: 40
-  SqrSpeed: 4
+  SqrSpeed: 1
   DestroyDistance: 150
 --- !u!65 &5747224886433507788
 BoxCollider:

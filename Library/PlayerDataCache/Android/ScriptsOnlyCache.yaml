@@ -11,6 +11,7 @@ ScriptsOnlyBuild:
     - Autohand.Teleporter
     - LowPolyWater.LowPolyWater
     - ONSPSettings
+    - RowingForce
     - Sigtrap.VrTunnellingPro.Tunnelling
     - SqrParams
     - SqrSpawn
@@ -82,55 +83,57 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11706}
+      Script: {instanceID: 11584}
     - Class: 114
-      Script: {instanceID: 11740}
+      Script: {instanceID: 11618}
     - Class: 114
-      Script: {instanceID: 11816}
+      Script: {instanceID: 11694}
     - Class: 114
-      Script: {instanceID: 11910}
+      Script: {instanceID: 11788}
     - Class: 114
-      Script: {instanceID: 12318}
+      Script: {instanceID: 12196}
     - Class: 114
-      Script: {instanceID: 12472}
+      Script: {instanceID: 12350}
     - Class: 114
-      Script: {instanceID: 12544}
+      Script: {instanceID: 12422}
+    - Class: 114
+      Script: {instanceID: 12430}
     - Class: 114
       Script: {instanceID: 12552}
     - Class: 114
-      Script: {instanceID: 12674}
+      Script: {instanceID: 12568}
     - Class: 114
-      Script: {instanceID: 12690}
+      Script: {instanceID: 12602}
     - Class: 114
-      Script: {instanceID: 12724}
+      Script: {instanceID: 12710}
     - Class: 114
-      Script: {instanceID: 12832}
+      Script: {instanceID: 12948}
     - Class: 114
-      Script: {instanceID: 13070}
+      Script: {instanceID: 13068}
     - Class: 114
-      Script: {instanceID: 13190}
+      Script: {instanceID: 13198}
     - Class: 114
-      Script: {instanceID: 13418}
+      Script: {instanceID: 13298}
     - Class: 114
-      Script: {instanceID: 13508}
+      Script: {instanceID: 13388}
     - Class: 114
-      Script: {instanceID: 13662}
+      Script: {instanceID: 13542}
     - Class: 114
-      Script: {instanceID: 13922}
+      Script: {instanceID: 13802}
     - Class: 114
-      Script: {instanceID: 14074}
+      Script: {instanceID: 13954}
     - Class: 114
-      Script: {instanceID: 14268}
+      Script: {instanceID: 14148}
     - Class: 114
-      Script: {instanceID: 14348}
+      Script: {instanceID: 14228}
     - Class: 114
-      Script: {instanceID: 14370}
+      Script: {instanceID: 14250}
     - Class: 114
-      Script: {instanceID: 14428}
+      Script: {instanceID: 14308}
     - Class: 114
-      Script: {instanceID: 14812}
+      Script: {instanceID: 14692}
     - Class: 114
-      Script: {instanceID: 19714}
+      Script: {instanceID: 15740}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 120
@@ -1158,6 +1161,12 @@ ScriptsOnlyBuild:
     className: OVRLipSyncDebugConsole
   - hash:
       serializedVersion: 2
+      Hash: 29828ddaacbb9d3a32ed108b7d912ebd
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: RowingForce
+  - hash:
+      serializedVersion: 2
       Hash: 8a472b9d30acaab8e6257c7f673e2479
     assemblyName: Assembly-CSharp.dll
     namespaceName: OVRTouchSample
@@ -2041,4 +2050,4 @@ ScriptsOnlyBuild:
   platform: 13
   scenePathNames:
   - Assets/Resources/Rafting/Scenes/FuncTest.unity
-  playerPath: C:/Demetrius/UnityProjects/HandsTest.apk
+  playerPath: C:/Demetrius/UnityProjects/PaddleTest.apk

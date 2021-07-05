@@ -241,6 +241,7 @@
     <Compile Include="Assets\Oculus\Spatializer\scripts\OculusSpatializerUnity.cs" />
     <Compile Include="Assets\Oculus\Spatializer\scripts\helpers\ONSPReflectionZone.cs" />
     <Compile Include="Assets\Resources\Rafting\Scripts\Destroyer.cs" />
+    <Compile Include="Assets\Resources\Rafting\Scripts\RowingForce.cs" />
     <Compile Include="Assets\Resources\Rafting\Scripts\SqrParams.cs" />
     <Compile Include="Assets\Resources\Rafting\Scripts\SqrSpawn.cs" />
     <Compile Include="Assets\VrTunnellingPro\Examples\VRTP_ExampleMovement.cs" />
