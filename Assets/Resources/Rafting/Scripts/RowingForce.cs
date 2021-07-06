@@ -8,6 +8,7 @@ public class RowingForce : MonoBehaviour
     private Vector3 tmpPoint;
     private Vector3 impulseVector;
     public Rigidbody SqrWorld;
+    public int Multiplier;
     // Start is called before the first frame update
     void Start() {
 
@@ -23,7 +24,7 @@ public class RowingForce : MonoBehaviour
         if (other.tag == "Paddle") {
             tmpPoint = other.transform.position;
             impulseVector = (tmpPoint - startPoint);
-            SqrWorld.AddForce(impulseVector*20, ForceMode.Impulse);
+            SqrWorld.AddForce(impulseVector*Multiplier, ForceMode.Impulse);
             startPoint = tmpPoint;
         }
     }
