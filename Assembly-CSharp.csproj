@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{E7FF1754-ED67-F588-01AB-1F45EED545EB}</ProjectGuid>
+    <ProjectGuid>{BA7322E7-A920-CE27-63CC-C40C45EAD43E}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -52,6 +52,9 @@
     <UnityBuildTarget>Android:13</UnityBuildTarget>
     <UnityVersion>2019.4.28f1</UnityVersion>
   </PropertyGroup>
+  <ItemGroup>
+    <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
+  </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\AutoHand\Examples\Scenes\XR\Scripts\XRHandControllerLink.cs" />
     <Compile Include="Assets\AutoHand\Examples\Scenes\XR\Scripts\XRTeleporterLink.cs" />
@@ -907,23 +910,23 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Oculus.Platform.csproj">
-      <Project>{E23FAEF5-B338-0D47-499A-5AEF5F8C3277}</Project>
+      <Project>{6518DB4E-26DB-0C1F-4433-BDF600D82C34}</Project>
       <Name>Oculus.Platform</Name>
     </ProjectReference>
     <ProjectReference Include="Oculus.VR.Editor.csproj">
-      <Project>{69EEA740-86A1-6C36-7BAD-A9F882CAF743}</Project>
+      <Project>{CBE56D94-2312-B8BF-A38E-729B6C11923B}</Project>
       <Name>Oculus.VR.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Oculus.VR.Scripts.Editor.csproj">
-      <Project>{D45FF602-9D08-DD31-3041-F6FF970C5B10}</Project>
+      <Project>{2C98CDEA-E3F2-52A7-009E-B51055C50FE7}</Project>
       <Name>Oculus.VR.Scripts.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Oculus.VR.csproj">
-      <Project>{6BF62BC8-2D16-9C9E-5362-F643EF35060B}</Project>
+      <Project>{23E871E4-1E29-37F1-3C13-15A9D64E0B22}</Project>
       <Name>Oculus.VR</Name>
     </ProjectReference>
     <ProjectReference Include="Oculus.Platform.Editor.csproj">
-      <Project>{398CE478-3AE5-A96F-D3A2-55238BF826EC}</Project>
+      <Project>{74833A20-1A67-3026-E685-68384BF9C97E}</Project>
       <Name>Oculus.Platform.Editor</Name>
     </ProjectReference>
   </ItemGroup>
