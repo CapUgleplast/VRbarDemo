@@ -968,7 +968,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SqrWorld: {fileID: 1258806244}
-  Multiplier: 16
+  Multiplier: 18
 --- !u!65 &310505693
 BoxCollider:
   m_ObjectHideFlags: 0
