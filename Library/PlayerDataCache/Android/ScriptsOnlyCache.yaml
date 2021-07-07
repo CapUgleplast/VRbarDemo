@@ -9,7 +9,6 @@ ScriptsOnlyBuild:
     - Autohand.Hand
     - Autohand.HandStabilizer
     - Autohand.Teleporter
-    - AxeHitReaction
     - LowPolyWater.LowPolyWater
     - ONSPSettings
     - RowingForce
@@ -84,85 +83,57 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11584}
+      Script: {instanceID: 11592}
     - Class: 114
-      Script: {instanceID: 11618}
+      Script: {instanceID: 11626}
     - Class: 114
-      Script: {instanceID: 11694}
+      Script: {instanceID: 11702}
     - Class: 114
-      Script: {instanceID: 11788}
+      Script: {instanceID: 11796}
     - Class: 114
-      Script: {instanceID: 12196}
+      Script: {instanceID: 12204}
     - Class: 114
-      Script: {instanceID: 12350}
-    - Class: 114
-      Script: {instanceID: 12422}
+      Script: {instanceID: 12358}
     - Class: 114
       Script: {instanceID: 12430}
     - Class: 114
-      Script: {instanceID: 12552}
+      Script: {instanceID: 12438}
     - Class: 114
-      Script: {instanceID: 12568}
+      Script: {instanceID: 12560}
     - Class: 114
-      Script: {instanceID: 12602}
+      Script: {instanceID: 12576}
     - Class: 114
-      Script: {instanceID: 12710}
+      Script: {instanceID: 12610}
     - Class: 114
-      Script: {instanceID: 12948}
+      Script: {instanceID: 12718}
     - Class: 114
-      Script: {instanceID: 13068}
+      Script: {instanceID: 12956}
     - Class: 114
-      Script: {instanceID: 13198}
+      Script: {instanceID: 13076}
     - Class: 114
-      Script: {instanceID: 13298}
+      Script: {instanceID: 13206}
     - Class: 114
-      Script: {instanceID: 13388}
+      Script: {instanceID: 13306}
     - Class: 114
-      Script: {instanceID: 13542}
+      Script: {instanceID: 13396}
     - Class: 114
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
+      Script: {instanceID: 13550}
+    - Class: 114
       Script: {instanceID: 13810}
-=======
-      Script: {instanceID: 13802}
->>>>>>> Stashed changes
     - Class: 114
-      Script: {instanceID: 13954}
+      Script: {instanceID: 13962}
     - Class: 114
-      Script: {instanceID: 14148}
+      Script: {instanceID: 14156}
     - Class: 114
-      Script: {instanceID: 14228}
+      Script: {instanceID: 14236}
     - Class: 114
-      Script: {instanceID: 14250}
+      Script: {instanceID: 14258}
     - Class: 114
-      Script: {instanceID: 14308}
+      Script: {instanceID: 14316}
     - Class: 114
-      Script: {instanceID: 14692}
+      Script: {instanceID: 14700}
     - Class: 114
-<<<<<<< Updated upstream
       Script: {instanceID: 18494}
-=======
-      Script: {instanceID: 13778}
-    - Class: 114
-      Script: {instanceID: 13804}
-    - Class: 114
-      Script: {instanceID: 13956}
-    - Class: 114
-      Script: {instanceID: 14150}
-    - Class: 114
-      Script: {instanceID: 14230}
-    - Class: 114
-      Script: {instanceID: 14252}
-    - Class: 114
-      Script: {instanceID: 14310}
-    - Class: 114
-      Script: {instanceID: 14694}
-    - Class: 114
-      Script: {instanceID: 15782}
->>>>>>> Stashed changes
-=======
-      Script: {instanceID: 15770}
->>>>>>> Stashed changes
     - Class: 115
       Script: {instanceID: 0}
     - Class: 120
@@ -178,8 +149,6 @@ ScriptsOnlyBuild:
     - Class: 157
       Script: {instanceID: 0}
     - Class: 196
-      Script: {instanceID: 0}
-    - Class: 205
       Script: {instanceID: 0}
   scriptHashData:
   - hash:
@@ -1090,7 +1059,7 @@ ScriptsOnlyBuild:
     className: BallEjector
   - hash:
       serializedVersion: 2
-      Hash: e18ca4c0a31c0d52dcbee70829652d29
+      Hash: 8be2a8ae103358c63790dfa59f6b5302
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: SqrSpawn
@@ -1562,12 +1531,6 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PoseEditHelper
-  - hash:
-      serializedVersion: 2
-      Hash: 73ba8cbda874f23db9f13ab20d70dba8
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: AxeHitReaction
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -2087,4 +2050,4 @@ ScriptsOnlyBuild:
   platform: 13
   scenePathNames:
   - Assets/Resources/Rafting/Scenes/FuncTest.unity
-  playerPath: C:/Piska/PTest16.apk
+  playerPath: C:/Piska/PTest9.apk

@@ -14,8 +14,6 @@ public class RowingForce : MonoBehaviour
 
     }
 
-    
-
     private void OnTriggerEnter(Collider other) {
         if (other.tag == "Paddle") {
             startPoint = other.transform.position;
@@ -28,8 +26,6 @@ public class RowingForce : MonoBehaviour
             impulseVector = (tmpPoint - startPoint);
             SqrWorld.AddForce(impulseVector*Multiplier, ForceMode.Impulse);
             startPoint = tmpPoint;
-            OVRInput.SetControllerVibration(.05f, 0.1f, OVRInput.Controller.RTouch);
-            OVRInput.SetControllerVibration(.05f, 0.1f, OVRInput.Controller.LTouch);
         }
     }
     // Update is called once per frame
