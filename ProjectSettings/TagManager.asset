@@ -9,6 +9,7 @@ TagManager:
   - FxTemporaire
   - Destroyer
   - Paddle
+  - Axe
   layers:
   - Default
   - TransparentFX

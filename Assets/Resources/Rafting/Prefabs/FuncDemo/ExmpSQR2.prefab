@@ -2846,3 +2846,4 @@ MonoBehaviour:
   SpawnSqrChance: 0
   SqrNum: 3
   SqrSpawnPoint: {fileID: 0}
+  Spawner: {fileID: 8730930917013175626}

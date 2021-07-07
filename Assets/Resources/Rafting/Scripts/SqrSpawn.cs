@@ -7,9 +7,11 @@ public class SqrSpawn : MonoBehaviour
     public int SpawnSqrChance;
     public int SqrNum;
     public GameObject SqrSpawnPoint;
+    public GameObject Spawner;
     private void Start() {
         SqrSpawnPoint = GameObject.Find("SqrSpawnPoint");
     }
+
 
     private void OnTriggerEnter(Collider other) {
         if (other.tag == "Player") {
@@ -19,7 +21,7 @@ public class SqrSpawn : MonoBehaviour
             //Instantiate(SqrSpawn[SpawnSqrChance], new Vector3(0, 0, 47), Quaternion.identity);
             //Instantiate(SQRmap, new Vector3(0, 0, 45), Quaternion.identity);
             Instantiate(SQRmap, SqrSpawnPoint.transform);
-            Destroy(this);
+            Destroy(Spawner);
         }
        
         }
