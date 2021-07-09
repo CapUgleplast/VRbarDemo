@@ -5,9 +5,12 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Resources/Rafting/Scenes/FuncTest.unity
     guid: 71c475a5fe6f0c246a67c67b91ecd22c
+  - enabled: 1
+    path: Assets/Resources/Rafting/Scenes/JoJoScenes.unity
+    guid: 60edb101655e9e847a606191fb423bc1
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 8d640496c24b93246aaadc11a017c529,
       type: 2}

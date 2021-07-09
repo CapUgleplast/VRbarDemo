@@ -10,6 +10,8 @@ TagManager:
   - Destroyer
   - Paddle
   - Axe
+  - FixPoint1
+  - FixPoint2
   layers:
   - Default
   - TransparentFX

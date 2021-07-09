@@ -9,6 +9,8 @@ ScriptsOnlyBuild:
     - Autohand.Hand
     - Autohand.HandStabilizer
     - Autohand.Teleporter
+    - AxeHitReaction
+    - Destroyer
     - LowPolyWater.LowPolyWater
     - ONSPSettings
     - RowingForce
@@ -45,7 +47,7 @@ ScriptsOnlyBuild:
     - UnityEngine.EventSystems.EventSystem
     - UnityEngine.EventSystems.StandaloneInputModule
   sceneClasses:
-    Assets/Resources/Rafting/Scenes/FuncTest.unity:
+    Assets/Resources/Rafting/Scenes/JoJoScenes.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -83,57 +85,59 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11592}
+      Script: {instanceID: 11586}
     - Class: 114
-      Script: {instanceID: 11626}
+      Script: {instanceID: 11620}
     - Class: 114
-      Script: {instanceID: 11702}
+      Script: {instanceID: 11696}
     - Class: 114
-      Script: {instanceID: 11796}
+      Script: {instanceID: 11790}
     - Class: 114
-      Script: {instanceID: 12204}
+      Script: {instanceID: 12198}
     - Class: 114
-      Script: {instanceID: 12358}
+      Script: {instanceID: 12352}
     - Class: 114
-      Script: {instanceID: 12430}
+      Script: {instanceID: 12424}
     - Class: 114
-      Script: {instanceID: 12438}
+      Script: {instanceID: 12432}
     - Class: 114
-      Script: {instanceID: 12560}
+      Script: {instanceID: 12554}
     - Class: 114
-      Script: {instanceID: 12576}
+      Script: {instanceID: 12570}
     - Class: 114
-      Script: {instanceID: 12610}
+      Script: {instanceID: 12604}
     - Class: 114
-      Script: {instanceID: 12718}
+      Script: {instanceID: 12712}
     - Class: 114
-      Script: {instanceID: 12956}
+      Script: {instanceID: 12950}
     - Class: 114
-      Script: {instanceID: 13076}
+      Script: {instanceID: 13070}
     - Class: 114
-      Script: {instanceID: 13206}
+      Script: {instanceID: 13200}
     - Class: 114
-      Script: {instanceID: 13306}
+      Script: {instanceID: 13272}
     - Class: 114
-      Script: {instanceID: 13396}
+      Script: {instanceID: 13300}
     - Class: 114
-      Script: {instanceID: 13550}
+      Script: {instanceID: 13390}
     - Class: 114
-      Script: {instanceID: 13810}
+      Script: {instanceID: 13544}
     - Class: 114
-      Script: {instanceID: 13962}
+      Script: {instanceID: 13780}
     - Class: 114
-      Script: {instanceID: 14156}
+      Script: {instanceID: 13806}
     - Class: 114
-      Script: {instanceID: 14236}
+      Script: {instanceID: 13958}
     - Class: 114
-      Script: {instanceID: 14258}
+      Script: {instanceID: 14152}
     - Class: 114
-      Script: {instanceID: 14316}
+      Script: {instanceID: 14232}
     - Class: 114
-      Script: {instanceID: 14700}
+      Script: {instanceID: 14254}
     - Class: 114
-      Script: {instanceID: 18494}
+      Script: {instanceID: 14312}
+    - Class: 114
+      Script: {instanceID: 14698}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 120
@@ -149,6 +153,8 @@ ScriptsOnlyBuild:
     - Class: 157
       Script: {instanceID: 0}
     - Class: 196
+      Script: {instanceID: 0}
+    - Class: 205
       Script: {instanceID: 0}
   scriptHashData:
   - hash:
@@ -1209,7 +1215,7 @@ ScriptsOnlyBuild:
     className: TextContainer
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+      Hash: c6a4d4b82cfe0021935db5f442459dfd
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Destroyer
@@ -1533,6 +1539,12 @@ ScriptsOnlyBuild:
     className: PoseEditHelper
   - hash:
       serializedVersion: 2
+      Hash: 73ba8cbda874f23db9f13ab20d70dba8
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: AxeHitReaction
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Oculus.Platform.dll
     namespaceName: Oculus.Platform.Samples.VrHoops
@@ -1809,6 +1821,12 @@ ScriptsOnlyBuild:
     className: VREyeRaycaster
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Breakdown
+  - hash:
+      serializedVersion: 2
       Hash: ffd7b11c56ea05e520e76e0c09fd1527
     assemblyName: Assembly-CSharp.dll
     namespaceName: Autohand
@@ -2049,5 +2067,5 @@ ScriptsOnlyBuild:
     className: PlayableTrack
   platform: 13
   scenePathNames:
-  - Assets/Resources/Rafting/Scenes/FuncTest.unity
-  playerPath: C:/Piska/PTest9.apk
+  - Assets/Resources/Rafting/Scenes/JoJoScenes.unity
+  playerPath: C:/Piska/HTest12.apk
