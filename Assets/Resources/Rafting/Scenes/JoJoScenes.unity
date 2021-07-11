@@ -689,6 +689,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 876860921}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &758620671 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6993293835623682029, guid: 80c901a4b74b74e44931a101aea10990,
+    type: 3}
+  m_PrefabInstance: {fileID: 927077183}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &817345661
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -908,6 +914,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6993293835623682029, guid: 80c901a4b74b74e44931a101aea10990,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 6993293836589249726, guid: 80c901a4b74b74e44931a101aea10990,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 80c901a4b74b74e44931a101aea10990, type: 3}
@@ -2460,7 +2476,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7b3373950dc50ee4b94e5731f725de85, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.251
+      value: -0.124
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7b3373950dc50ee4b94e5731f725de85, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2573,7 +2589,7 @@ MonoBehaviour:
   hightlightMaterial: {fileID: 0}
   throwMultiplyer: 1
   pullApartBreakOnly: 1
-  makeChildrenGrabbable: 1
+  makeChildrenGrabbable: 0
   jointBreakForce: 1200
   jointBreakTorque: 1200
   onGrab:
@@ -2885,7 +2901,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1787634816}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.1515, y: 0, z: -0.0774}
+  m_LocalPosition: {x: 0.1515, y: -0, z: -0.078}
   m_LocalScale: {x: -0.031904694, y: -0.029365683, z: -0.0036763}
   m_Children: []
   m_Father: {fileID: 1683040843}
@@ -2905,6 +2921,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   FixPoint1: 0
   FixPoint2: 0
+  HandL: {fileID: 758620671}
+  HandR: {fileID: 1990879809}
   Breakdown: {fileID: 1447248162}
 --- !u!65 &1787634819
 BoxCollider:
@@ -3229,6 +3247,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4dabef18cf9ee544ca4ead13be827cd9, type: 3}
+--- !u!1 &1990879809 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6993293836589249726, guid: 80c901a4b74b74e44931a101aea10990,
+    type: 3}
+  m_PrefabInstance: {fileID: 927077183}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2002992086
 GameObject:
   m_ObjectHideFlags: 0

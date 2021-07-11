@@ -85,59 +85,59 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11586}
+      Script: {instanceID: 11584}
     - Class: 114
-      Script: {instanceID: 11620}
+      Script: {instanceID: 11618}
     - Class: 114
-      Script: {instanceID: 11696}
+      Script: {instanceID: 11694}
     - Class: 114
-      Script: {instanceID: 11790}
+      Script: {instanceID: 11788}
     - Class: 114
-      Script: {instanceID: 12198}
+      Script: {instanceID: 12196}
     - Class: 114
-      Script: {instanceID: 12352}
+      Script: {instanceID: 12350}
     - Class: 114
-      Script: {instanceID: 12424}
+      Script: {instanceID: 12422}
     - Class: 114
-      Script: {instanceID: 12432}
+      Script: {instanceID: 12430}
     - Class: 114
-      Script: {instanceID: 12554}
+      Script: {instanceID: 12552}
     - Class: 114
-      Script: {instanceID: 12570}
+      Script: {instanceID: 12568}
     - Class: 114
-      Script: {instanceID: 12604}
+      Script: {instanceID: 12602}
     - Class: 114
-      Script: {instanceID: 12712}
+      Script: {instanceID: 12710}
     - Class: 114
-      Script: {instanceID: 12950}
+      Script: {instanceID: 12948}
     - Class: 114
-      Script: {instanceID: 13070}
+      Script: {instanceID: 13068}
     - Class: 114
-      Script: {instanceID: 13200}
+      Script: {instanceID: 13198}
     - Class: 114
-      Script: {instanceID: 13272}
+      Script: {instanceID: 13270}
     - Class: 114
-      Script: {instanceID: 13300}
+      Script: {instanceID: 13298}
     - Class: 114
-      Script: {instanceID: 13390}
+      Script: {instanceID: 13388}
     - Class: 114
-      Script: {instanceID: 13544}
+      Script: {instanceID: 13542}
     - Class: 114
-      Script: {instanceID: 13780}
+      Script: {instanceID: 13778}
     - Class: 114
-      Script: {instanceID: 13806}
+      Script: {instanceID: 13804}
     - Class: 114
-      Script: {instanceID: 13958}
+      Script: {instanceID: 13956}
     - Class: 114
-      Script: {instanceID: 14152}
+      Script: {instanceID: 14150}
     - Class: 114
-      Script: {instanceID: 14232}
+      Script: {instanceID: 14230}
     - Class: 114
-      Script: {instanceID: 14254}
+      Script: {instanceID: 14252}
     - Class: 114
-      Script: {instanceID: 14312}
+      Script: {instanceID: 14310}
     - Class: 114
-      Script: {instanceID: 14698}
+      Script: {instanceID: 14696}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 120
@@ -1215,7 +1215,7 @@ ScriptsOnlyBuild:
     className: TextContainer
   - hash:
       serializedVersion: 2
-      Hash: c6a4d4b82cfe0021935db5f442459dfd
+      Hash: 3037d5418bde13907e805e1525f0fd03
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Destroyer
@@ -2068,4 +2068,4 @@ ScriptsOnlyBuild:
   platform: 13
   scenePathNames:
   - Assets/Resources/Rafting/Scenes/JoJoScenes.unity
-  playerPath: C:/Piska/HTest12.apk
+  playerPath: C:/Piska/HTest15.apk

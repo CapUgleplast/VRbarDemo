@@ -12,6 +12,8 @@ TagManager:
   - Axe
   - FixPoint1
   - FixPoint2
+  - Lhand
+  - Rhand
   layers:
   - Default
   - TransparentFX

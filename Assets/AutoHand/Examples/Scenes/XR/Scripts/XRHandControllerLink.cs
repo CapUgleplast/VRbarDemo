@@ -31,6 +31,7 @@ namespace Autohand.Demo{
 
         XRNode role;
         bool squeezing;
+        static bool grabbingCheck;
         bool grabbing;
         InputDevice device;
         List<InputDevice> devices;
@@ -60,11 +61,13 @@ namespace Autohand.Demo{
                         hand.Release();
                         hand.gripOffset -= 0.8f;
                         grabbing = false;
+                        grabbingCheck = false;
                     }
                     else if(!grabbing && grip){
                         hand.Grab();
                         hand.gripOffset += 0.8f;
                         grabbing = true;
+                        grabbingCheck = true;
                     }
                 }
                 //Grip input
