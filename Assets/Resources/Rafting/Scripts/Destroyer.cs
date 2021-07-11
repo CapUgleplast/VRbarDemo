@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Destroyer : MonoBehaviour
 {
+<<<<<<< Updated upstream
     public bool FixPoint1 = false;
     public bool FixPoint2 = false;
     public GameObject HandL;
@@ -42,6 +43,14 @@ public class Destroyer : MonoBehaviour
     void Update() {
         if (FixPoint1 == true && FixPoint2 == true){
             Destroy(Breakdown);
+=======
+    public double timer;
+    void Update() {
+        timer -= Time.deltaTime;
+        if (timer <= 0) {
+            Destroy(this.gameObject);
+>>>>>>> Stashed changes
         }
     }
+
 }

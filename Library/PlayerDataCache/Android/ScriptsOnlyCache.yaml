@@ -2,10 +2,14 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - Autohand.Demo.CubeBreak
+    - Autohand.Demo.Smash
+    - Autohand.Demo.Smasher
     - Autohand.Demo.XRHandControllerLink
     - Autohand.Demo.XRTeleporterLink
     - Autohand.Finger
     - Autohand.Grabbable
+    - Autohand.GrabbablePose
+    - Autohand.GrabbableThrowEvent
     - Autohand.Hand
     - Autohand.HandStabilizer
     - Autohand.Teleporter
@@ -93,8 +97,15 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11788}
     - Class: 114
+<<<<<<< Updated upstream
       Script: {instanceID: 12196}
     - Class: 114
+=======
+      Script: {instanceID: 12164}
+    - Class: 114
+      Script: {instanceID: 12196}
+    - Class: 114
+>>>>>>> Stashed changes
       Script: {instanceID: 12350}
     - Class: 114
       Script: {instanceID: 12422}
@@ -102,6 +113,7 @@ ScriptsOnlyBuild:
       Script: {instanceID: 12430}
     - Class: 114
       Script: {instanceID: 12552}
+<<<<<<< Updated upstream
     - Class: 114
       Script: {instanceID: 12568}
     - Class: 114
@@ -128,6 +140,38 @@ ScriptsOnlyBuild:
       Script: {instanceID: 13804}
     - Class: 114
       Script: {instanceID: 13956}
+=======
+    - Class: 114
+      Script: {instanceID: 12568}
+    - Class: 114
+      Script: {instanceID: 12602}
+    - Class: 114
+      Script: {instanceID: 12710}
+    - Class: 114
+      Script: {instanceID: 12948}
+    - Class: 114
+      Script: {instanceID: 13068}
+    - Class: 114
+      Script: {instanceID: 13160}
+    - Class: 114
+      Script: {instanceID: 13198}
+    - Class: 114
+      Script: {instanceID: 13270}
+    - Class: 114
+      Script: {instanceID: 13298}
+    - Class: 114
+      Script: {instanceID: 13388}
+    - Class: 114
+      Script: {instanceID: 13542}
+    - Class: 114
+      Script: {instanceID: 13778}
+    - Class: 114
+      Script: {instanceID: 13804}
+    - Class: 114
+      Script: {instanceID: 13956}
+    - Class: 114
+      Script: {instanceID: 13968}
+>>>>>>> Stashed changes
     - Class: 114
       Script: {instanceID: 14150}
     - Class: 114
@@ -137,7 +181,15 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 14310}
     - Class: 114
+<<<<<<< Updated upstream
       Script: {instanceID: 14696}
+=======
+      Script: {instanceID: 14656}
+    - Class: 114
+      Script: {instanceID: 14694}
+    - Class: 114
+      Script: {instanceID: 15784}
+>>>>>>> Stashed changes
     - Class: 115
       Script: {instanceID: 0}
     - Class: 120
@@ -154,6 +206,13 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 196
       Script: {instanceID: 0}
+<<<<<<< Updated upstream
+=======
+    - Class: 198
+      Script: {instanceID: 0}
+    - Class: 199
+      Script: {instanceID: 0}
+>>>>>>> Stashed changes
     - Class: 205
       Script: {instanceID: 0}
   scriptHashData:
@@ -1215,7 +1274,11 @@ ScriptsOnlyBuild:
     className: TextContainer
   - hash:
       serializedVersion: 2
+<<<<<<< Updated upstream
       Hash: 3037d5418bde13907e805e1525f0fd03
+=======
+      Hash: 8a4252b2731df6088ff3948cb8b15793
+>>>>>>> Stashed changes
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Destroyer
@@ -1539,7 +1602,11 @@ ScriptsOnlyBuild:
     className: PoseEditHelper
   - hash:
       serializedVersion: 2
+<<<<<<< Updated upstream
       Hash: 73ba8cbda874f23db9f13ab20d70dba8
+=======
+      Hash: d2894e44a37c76d6450e19ab9a61338d
+>>>>>>> Stashed changes
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: AxeHitReaction
@@ -2067,5 +2134,10 @@ ScriptsOnlyBuild:
     className: PlayableTrack
   platform: 13
   scenePathNames:
+<<<<<<< Updated upstream
   - Assets/Resources/Rafting/Scenes/JoJoScenes.unity
   playerPath: C:/Piska/HTest15.apk
+=======
+  - Assets/Resources/Rafting/Scenes/FuncTest.unity
+  playerPath: C:/Demetrius/UnityProjects/PaddleTest.apk
+>>>>>>> Stashed changes

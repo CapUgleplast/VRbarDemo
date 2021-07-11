@@ -19,7 +19,7 @@ public class SqrSpawn : MonoBehaviour
             //Instantiate(SqrSpawn[SpawnSqrChance], new Vector3(0, 0, 47), Quaternion.identity);
             //Instantiate(SQRmap, new Vector3(0, 0, 45), Quaternion.identity);
             Instantiate(SQRmap, SqrSpawnPoint.transform);
-            Destroy(this);
+            Destroy(this.gameObject);
         }
        
         }
