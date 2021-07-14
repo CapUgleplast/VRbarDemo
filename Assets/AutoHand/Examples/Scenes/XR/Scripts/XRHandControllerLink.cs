@@ -31,7 +31,7 @@ namespace Autohand.Demo{
 
         XRNode role;
         bool squeezing;
-        static bool grabbingCheck;
+        public bool grabbingCheck;
         bool grabbing;
         InputDevice device;
         List<InputDevice> devices;

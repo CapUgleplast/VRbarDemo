@@ -94,7 +94,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 0.51
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &3391673950926202842
 MonoBehaviour:
@@ -108,13 +108,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb2efdba99da323499529a5b5122fb1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  axe: {fileID: 4642487813601621574, guid: a30799b6025945948bc3f9c39b23a048, type: 3}
-  SpeedThreshold: 2
-  destroyable: {fileID: 3391673950926202843}
-  DustParticles: {fileID: 2845177574167775358, guid: 7815e3f2879d5994bba5c231638fe703,
-    type: 3}
-  Scar: {fileID: 3947475109081840106, guid: 1e6a6a77858db2147b8c52e56f1fdfdc, type: 3}
-  HP: 2
+  HP: 3
 --- !u!54 &3391673950926202849
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -129,7 +123,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 14
   m_CollisionDetection: 0
 --- !u!135 &3391673950926202848
 SphereCollider:
@@ -142,5 +136,5 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.45
+  m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}

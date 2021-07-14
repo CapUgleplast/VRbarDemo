@@ -2,19 +2,19 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - Autohand.Demo.CubeBreak
-    - Autohand.Demo.Smash
     - Autohand.Demo.Smasher
     - Autohand.Demo.XRHandControllerLink
     - Autohand.Demo.XRTeleporterLink
     - Autohand.Finger
     - Autohand.Grabbable
     - Autohand.GrabbablePose
-    - Autohand.GrabbableThrowEvent
     - Autohand.Hand
     - Autohand.HandStabilizer
     - Autohand.Teleporter
+    - AxeChop
     - AxeHitReaction
     - Destroyer
+    - HammerFix
     - LowPolyWater.LowPolyWater
     - ONSPSettings
     - RowingForce
@@ -51,7 +51,7 @@ ScriptsOnlyBuild:
     - UnityEngine.EventSystems.EventSystem
     - UnityEngine.EventSystems.StandaloneInputModule
   sceneClasses:
-    Assets/Resources/Rafting/Scenes/JoJoScenes.unity:
+    Assets/Resources/Rafting/Scenes/FuncTest.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -97,99 +97,61 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11788}
     - Class: 114
-<<<<<<< Updated upstream
-      Script: {instanceID: 12196}
+      Script: {instanceID: 12198}
     - Class: 114
-=======
-      Script: {instanceID: 12164}
+      Script: {instanceID: 12352}
     - Class: 114
-      Script: {instanceID: 12196}
+      Script: {instanceID: 12424}
     - Class: 114
->>>>>>> Stashed changes
-      Script: {instanceID: 12350}
+      Script: {instanceID: 12432}
     - Class: 114
-      Script: {instanceID: 12422}
+      Script: {instanceID: 12556}
     - Class: 114
-      Script: {instanceID: 12430}
+      Script: {instanceID: 12572}
     - Class: 114
-      Script: {instanceID: 12552}
-<<<<<<< Updated upstream
+      Script: {instanceID: 12598}
     - Class: 114
-      Script: {instanceID: 12568}
+      Script: {instanceID: 12608}
     - Class: 114
-      Script: {instanceID: 12602}
+      Script: {instanceID: 12716}
     - Class: 114
-      Script: {instanceID: 12710}
+      Script: {instanceID: 12956}
     - Class: 114
-      Script: {instanceID: 12948}
+      Script: {instanceID: 13080}
     - Class: 114
-      Script: {instanceID: 13068}
+      Script: {instanceID: 13174}
     - Class: 114
-      Script: {instanceID: 13198}
+      Script: {instanceID: 13212}
     - Class: 114
-      Script: {instanceID: 13270}
+      Script: {instanceID: 13284}
     - Class: 114
-      Script: {instanceID: 13298}
+      Script: {instanceID: 13314}
     - Class: 114
-      Script: {instanceID: 13388}
+      Script: {instanceID: 13406}
     - Class: 114
-      Script: {instanceID: 13542}
+      Script: {instanceID: 13562}
     - Class: 114
-      Script: {instanceID: 13778}
+      Script: {instanceID: 13802}
     - Class: 114
-      Script: {instanceID: 13804}
+      Script: {instanceID: 13828}
     - Class: 114
-      Script: {instanceID: 13956}
-=======
+      Script: {instanceID: 13980}
     - Class: 114
-      Script: {instanceID: 12568}
+      Script: {instanceID: 14176}
     - Class: 114
-      Script: {instanceID: 12602}
+      Script: {instanceID: 14256}
     - Class: 114
-      Script: {instanceID: 12710}
+      Script: {instanceID: 14278}
     - Class: 114
-      Script: {instanceID: 12948}
+      Script: {instanceID: 14336}
     - Class: 114
-      Script: {instanceID: 13068}
+      Script: {instanceID: 14430}
     - Class: 114
-      Script: {instanceID: 13160}
+      Script: {instanceID: 14684}
     - Class: 114
-      Script: {instanceID: 13198}
+      Script: {instanceID: 14722}
     - Class: 114
-      Script: {instanceID: 13270}
-    - Class: 114
-      Script: {instanceID: 13298}
-    - Class: 114
-      Script: {instanceID: 13388}
-    - Class: 114
-      Script: {instanceID: 13542}
-    - Class: 114
-      Script: {instanceID: 13778}
-    - Class: 114
-      Script: {instanceID: 13804}
-    - Class: 114
-      Script: {instanceID: 13956}
-    - Class: 114
-      Script: {instanceID: 13968}
->>>>>>> Stashed changes
-    - Class: 114
-      Script: {instanceID: 14150}
-    - Class: 114
-      Script: {instanceID: 14230}
-    - Class: 114
-      Script: {instanceID: 14252}
-    - Class: 114
-      Script: {instanceID: 14310}
-    - Class: 114
-<<<<<<< Updated upstream
-      Script: {instanceID: 14696}
-=======
-      Script: {instanceID: 14656}
-    - Class: 114
-      Script: {instanceID: 14694}
-    - Class: 114
-      Script: {instanceID: 15784}
->>>>>>> Stashed changes
+      Script: {instanceID: 15870}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 120
@@ -206,13 +168,10 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 196
       Script: {instanceID: 0}
-<<<<<<< Updated upstream
-=======
     - Class: 198
       Script: {instanceID: 0}
     - Class: 199
       Script: {instanceID: 0}
->>>>>>> Stashed changes
     - Class: 205
       Script: {instanceID: 0}
   scriptHashData:
@@ -426,6 +385,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Scrollbar
+  - hash:
+      serializedVersion: 2
+      Hash: e38c89741d86cfc79b1cdde1da3b3863
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CasingScript
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -782,6 +747,12 @@ ScriptsOnlyBuild:
     className: ONSPAudioSource
   - hash:
       serializedVersion: 2
+      Hash: 8bf14ea4c2573341442cfb01300f46e1
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: DebrisScript
+  - hash:
+      serializedVersion: 2
       Hash: 4810b3707d5fd5dc0d4e93afb64fcd4b
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -846,6 +817,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: OculusSampleFramework
     className: DistanceGrabber
+  - hash:
+      serializedVersion: 2
+      Hash: b95c2256c6c6f9b89b28451c4f601685
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: AxeChop
   - hash:
       serializedVersion: 2
       Hash: 84f118e8bb01e4e536b4fe72b0493ca3
@@ -942,6 +919,12 @@ ScriptsOnlyBuild:
     assemblyName: Oculus.VR.dll
     namespaceName: 
     className: OVRHeadsetEmulator
+  - hash:
+      serializedVersion: 2
+      Hash: 7003551f5d2a1e674c8ed745dcedb0ac
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ImpactScript
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -1077,6 +1060,12 @@ ScriptsOnlyBuild:
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: LookAtCamera
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Oculus.Platform.dll
     namespaceName: Oculus.Platform.Samples.VrHoops
     className: P2PNetworkBall
@@ -1118,13 +1107,19 @@ ScriptsOnlyBuild:
     className: OVRHandTest
   - hash:
       serializedVersion: 2
+      Hash: 6af99a33a27dd02a47b9ca4032f7b50d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: BulletScript
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Oculus.Platform.dll
     namespaceName: Oculus.Platform.Samples.VrHoops
     className: BallEjector
   - hash:
       serializedVersion: 2
-      Hash: 8be2a8ae103358c63790dfa59f6b5302
+      Hash: 0014f5636d026b261595d2e012834af8
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: SqrSpawn
@@ -1178,6 +1173,12 @@ ScriptsOnlyBuild:
     className: InteractableToolsInputRouter
   - hash:
       serializedVersion: 2
+      Hash: 5a53671008ad6f68b0d110f7c70d732d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: TargetScript
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestTools.TestRunner.Callbacks
@@ -1226,7 +1227,7 @@ ScriptsOnlyBuild:
     className: OVRLipSyncDebugConsole
   - hash:
       serializedVersion: 2
-      Hash: 02e007439e6ed1fd544fb5e57b25ab3e
+      Hash: a29a7d391a15d5d82bcdbb66d1338fd9
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: RowingForce
@@ -1274,14 +1275,16 @@ ScriptsOnlyBuild:
     className: TextContainer
   - hash:
       serializedVersion: 2
-<<<<<<< Updated upstream
-      Hash: 3037d5418bde13907e805e1525f0fd03
-=======
       Hash: 8a4252b2731df6088ff3948cb8b15793
->>>>>>> Stashed changes
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Destroyer
+  - hash:
+      serializedVersion: 2
+      Hash: aa537a2a99418618903ba5ea365837a5
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ExplosionScript
   - hash:
       serializedVersion: 2
       Hash: 8f71d2ab3258f223c82a0616125cd43f
@@ -1326,6 +1329,12 @@ ScriptsOnlyBuild:
     className: TeleportAimHandlerLaser
   - hash:
       serializedVersion: 2
+      Hash: 94f6ed5c9bf042cddaecdb3dae1e4938
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: GrenadeScript
+  - hash:
+      serializedVersion: 2
       Hash: f84d945e5e1ca985698660fc26e9657f
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -1366,6 +1375,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: Autohand
     className: Grabbable
+  - hash:
+      serializedVersion: 2
+      Hash: 350d2e309675611b33e276b75f655358
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: FPSControllerLPFP
+    className: FpsControllerLPFP
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -1456,6 +1471,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: Autohand.Demo
     className: CubeBreak
+  - hash:
+      serializedVersion: 2
+      Hash: 7fe1677739b73c9b6f63468e0b5fed5c
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ExplosiveBarrelScript
   - hash:
       serializedVersion: 2
       Hash: 9e5b79eaffb4a828a08c59fb1d2f2d1a
@@ -1590,6 +1611,12 @@ ScriptsOnlyBuild:
     className: PlacePoint
   - hash:
       serializedVersion: 2
+      Hash: df69d0b5057ca9ea660270e6660fc67c
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: AutomaticGunScriptLPFP
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -1602,11 +1629,7 @@ ScriptsOnlyBuild:
     className: PoseEditHelper
   - hash:
       serializedVersion: 2
-<<<<<<< Updated upstream
-      Hash: 73ba8cbda874f23db9f13ab20d70dba8
-=======
-      Hash: d2894e44a37c76d6450e19ab9a61338d
->>>>>>> Stashed changes
+      Hash: f291bf89662e8aa3e94dd0c3e4cc5997
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: AxeHitReaction
@@ -1666,7 +1689,7 @@ ScriptsOnlyBuild:
     className: CameraOffset
   - hash:
       serializedVersion: 2
-      Hash: b7344648d438733deaaa3044e221ca9f
+      Hash: 21bbcc7f72bf937301c29362a70f927e
     assemblyName: Assembly-CSharp.dll
     namespaceName: Autohand.Demo
     className: XRHandControllerLink
@@ -1736,6 +1759,12 @@ ScriptsOnlyBuild:
     assemblyName: Oculus.Platform.dll
     namespaceName: Oculus.Platform.Samples.VrHoops
     className: GoalMover
+  - hash:
+      serializedVersion: 2
+      Hash: 2516c569a5afe369671ab79778906a15
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: HandgunScriptLPFP
   - hash:
       serializedVersion: 2
       Hash: ae83e830e7a90c0aff918c4c2e520825
@@ -1888,10 +1917,10 @@ ScriptsOnlyBuild:
     className: VREyeRaycaster
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+      Hash: 7ccc29bd91c02d587f0752a6a29a8700
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: Breakdown
+    className: HammerFix
   - hash:
       serializedVersion: 2
       Hash: ffd7b11c56ea05e520e76e0c09fd1527
@@ -2134,10 +2163,5 @@ ScriptsOnlyBuild:
     className: PlayableTrack
   platform: 13
   scenePathNames:
-<<<<<<< Updated upstream
-  - Assets/Resources/Rafting/Scenes/JoJoScenes.unity
-  playerPath: C:/Piska/HTest15.apk
-=======
   - Assets/Resources/Rafting/Scenes/FuncTest.unity
-  playerPath: C:/Demetrius/UnityProjects/PaddleTest.apk
->>>>>>> Stashed changes
+  playerPath: C:/Demetrius/UnityProjects/GamepadTest.apk

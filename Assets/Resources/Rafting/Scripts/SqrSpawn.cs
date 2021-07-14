@@ -7,6 +7,8 @@ public class SqrSpawn : MonoBehaviour
     public int SpawnSqrChance;
     public int SqrNum;
     public GameObject SqrSpawnPoint;
+    public GameObject SqrMagnet;
+    private GameObject SQRmap;
     private void Start() {
         SqrSpawnPoint = GameObject.Find("SqrSpawnPoint");
     }
@@ -14,7 +16,8 @@ public class SqrSpawn : MonoBehaviour
     private void OnTriggerEnter(Collider other) {
         if (other.tag == "Player") {
             SpawnSqrChance = Random.Range(1, SqrNum + 1);
-            var SQRmap = Resources.Load<GameObject>("Rafting/Prefabs/FuncDemo/ExmpSQR" + SpawnSqrChance);
+            Debug.Log(SpawnSqrChance);
+            SQRmap = Resources.Load<GameObject>("Rafting/Prefabs/FuncDemo/ExmpSQR" + SpawnSqrChance);
             
             //Instantiate(SqrSpawn[SpawnSqrChance], new Vector3(0, 0, 47), Quaternion.identity);
             //Instantiate(SQRmap, new Vector3(0, 0, 45), Quaternion.identity);
@@ -23,4 +26,9 @@ public class SqrSpawn : MonoBehaviour
         }
        
         }
+    private void Update() {
+       // SqrMagnet = GameObject.Find("SqrSpawnPoint/ExmpSQR" + SpawnSqrChance + "/SqrSpawnPos");
+        //SQRmap.transform.position = SqrMagnet.transform.position;
+
+    }
 }

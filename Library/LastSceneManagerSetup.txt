@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Resources/Rafting/Scenes/JoJoScenes.unity
+- path: Assets/Resources/Rafting/Scenes/FuncTest.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

@@ -9,6 +9,10 @@ public class RowingForce : MonoBehaviour
     private Vector3 impulseVector;
     public Rigidbody SqrWorld;
     public int Multiplier;
+    public GameObject HandL;
+    public GameObject HandR;
+    public float freq;
+    public float amp;
     // Start is called before the first frame update
     void Start() {
 
@@ -26,10 +30,26 @@ public class RowingForce : MonoBehaviour
             impulseVector = (tmpPoint - startPoint);
             SqrWorld.AddForce(impulseVector*Multiplier, ForceMode.Impulse);
             startPoint = tmpPoint;
+            if (HandR.GetComponent<Autohand.Demo.XRHandControllerLink>().grabbingCheck == true) {
+                OVRInput.SetControllerVibration(freq, amp, OVRInput.Controller.RTouch);
+
+            }
+
+            if (HandL.GetComponent<Autohand.Demo.XRHandControllerLink>().grabbingCheck == true) {
+                OVRInput.SetControllerVibration(freq, amp, OVRInput.Controller.LTouch);
+
+            }
         }
     }
-    // Update is called once per frame
-    void Update() {
-
+    private void OnTriggerExit(Collider other) {
+        if (other.tag == "Paddle") {
+            OVRInput.SetControllerVibration(0, 0, OVRInput.Controller.RTouch);
+            OVRInput.SetControllerVibration(0, 0, OVRInput.Controller.LTouch);
+        }
+            // Update is called once per frame
+            void Update() {
+            
+        }
+        
     }
 }

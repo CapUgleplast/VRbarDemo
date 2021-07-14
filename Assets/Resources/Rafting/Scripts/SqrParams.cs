@@ -113,6 +113,7 @@ public class SqrParams : MonoBehaviour
     // Update is called once per frame
     void Update() {
         //transform.position += new Vector3(0, 0, SqrSpeed * (-0.01f));
+        this.transform.Translate(Vector3.forward * SqrSpeed * -1f * Time.deltaTime);
         
         if (Vector3.Distance(this.transform.position, new Vector3(0, 0, 0)) > DestroyDistance) 
          {
@@ -121,7 +122,6 @@ public class SqrParams : MonoBehaviour
 
     }
     void FixedUpdate() {
-        this.transform.Translate(Vector3.forward * SqrSpeed * -1f * Time.deltaTime);
 
         //GetComponent<Rigidbody>().velocity = new Vector3(GetComponent<Rigidbody>().velocity.x, GetComponent<Rigidbody>().velocity.y, -SqrSpeed);
     }
