@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Resources/Rafting/Scenes/FuncTest.unity
+- path: Assets/Resources/Rafting/Scenes/FuncTest1.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

@@ -154,9 +154,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   axe: {fileID: 4642487813601621574}
   SpeedThreshold: 2
-  DustParticles: {fileID: 2845177574167775358, guid: 7815e3f2879d5994bba5c231638fe703,
+  DustParticles: {fileID: 2845177574167775358, guid: 732123c0e468a7b4f92e6323359a92b1,
     type: 3}
-  Scar: {fileID: 3947475109081840106, guid: 1e6a6a77858db2147b8c52e56f1fdfdc, type: 3}
+  Scar: {fileID: 3947475109081840106, guid: c484e6db871f3654988c3420fe20d5ed, type: 3}
   razor: {fileID: 1620358262093983516}
   HandL: {fileID: 0}
   HandR: {fileID: 0}
