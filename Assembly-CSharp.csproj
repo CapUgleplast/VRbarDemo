@@ -240,8 +240,10 @@
     <Compile Include="Assets\Oculus\Spatializer\scripts\ONSPVersion.cs" />
     <Compile Include="Assets\Oculus\Spatializer\scripts\OculusSpatializerUnity.cs" />
     <Compile Include="Assets\Oculus\Spatializer\scripts\helpers\ONSPReflectionZone.cs" />
+    <Compile Include="Assets\Resources\Rafting\Scripts\AxeChop.cs" />
     <Compile Include="Assets\Resources\Rafting\Scripts\AxeHitReaction.cs" />
     <Compile Include="Assets\Resources\Rafting\Scripts\Destroyer.cs" />
+    <Compile Include="Assets\Resources\Rafting\Scripts\HammerFix.cs" />
     <Compile Include="Assets\Resources\Rafting\Scripts\RowingForce.cs" />
     <Compile Include="Assets\Resources\Rafting\Scripts\SqrParams.cs" />
     <Compile Include="Assets\Resources\Rafting\Scripts\SqrSpawn.cs" />
