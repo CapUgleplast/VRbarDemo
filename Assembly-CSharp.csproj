@@ -294,8 +294,12 @@
     <Compile Include="Assets\Resources\Rafting\Scripts\Destroyer.cs" />
     <Compile Include="Assets\Resources\Rafting\Scripts\HammerFix.cs" />
     <Compile Include="Assets\Resources\Rafting\Scripts\Move.cs" />
+    <Compile Include="Assets\Resources\Rafting\Scripts\RaftDrag.cs" />
     <Compile Include="Assets\Resources\Rafting\Scripts\RowingForce.cs" />
+    <Compile Include="Assets\Resources\Rafting\Scripts\RowingForceNew.cs" />
+    <Compile Include="Assets\Resources\Rafting\Scripts\SqrLife.cs" />
     <Compile Include="Assets\Resources\Rafting\Scripts\SqrParams.cs" />
+    <Compile Include="Assets\Resources\Rafting\Scripts\SqrParamsNew.cs" />
     <Compile Include="Assets\Resources\Rafting\Scripts\SqrSpawn.cs" />
     <Compile Include="Assets\VrTunnellingPro\Examples\VRTP_ExampleMovement.cs" />
     <Compile Include="Assets\VrTunnellingPro\Scripts\Tunnelling.cs" />
@@ -984,26 +988,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="Oculus.Platform.csproj">
-      <Project>{6518DB4E-26DB-0C1F-4433-BDF600D82C34}</Project>
-      <Name>Oculus.Platform</Name>
-    </ProjectReference>
-    <ProjectReference Include="Oculus.VR.Editor.csproj">
-      <Project>{CBE56D94-2312-B8BF-A38E-729B6C11923B}</Project>
-      <Name>Oculus.VR.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Oculus.VR.Scripts.Editor.csproj">
-      <Project>{2C98CDEA-E3F2-52A7-009E-B51055C50FE7}</Project>
-      <Name>Oculus.VR.Scripts.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Oculus.VR.csproj">
-      <Project>{23E871E4-1E29-37F1-3C13-15A9D64E0B22}</Project>
-      <Name>Oculus.VR</Name>
-    </ProjectReference>
-    <ProjectReference Include="Oculus.Platform.Editor.csproj">
-      <Project>{74833A20-1A67-3026-E685-68384BF9C97E}</Project>
-      <Name>Oculus.Platform.Editor</Name>
-    </ProjectReference>
     <ProjectReference Include="PhotonUnityNetworking.Utilities.PhotonPlayer.Editor.csproj">
       <Project>{D31A86D2-8DE8-FBB6-3301-5F4259728289}</Project>
       <Name>PhotonUnityNetworking.Utilities.PhotonPlayer.Editor</Name>
@@ -1024,6 +1008,10 @@
       <Project>{5EA2EB81-92EF-FF83-FE8A-D18C7780A08E}</Project>
       <Name>PhotonUnityNetworking.Utilities</Name>
     </ProjectReference>
+    <ProjectReference Include="Oculus.Platform.csproj">
+      <Project>{6518DB4E-26DB-0C1F-4433-BDF600D82C34}</Project>
+      <Name>Oculus.Platform</Name>
+    </ProjectReference>
     <ProjectReference Include="PhotonRealtime.csproj">
       <Project>{2A56AD51-84DF-EFBB-8B6B-95987C571EB4}</Project>
       <Name>PhotonRealtime</Name>
@@ -1032,9 +1020,29 @@
       <Project>{7E728D88-041C-FD88-2424-D6F5EFA322AE}</Project>
       <Name>PhotonUnityNetworking</Name>
     </ProjectReference>
+    <ProjectReference Include="Oculus.VR.Editor.csproj">
+      <Project>{CBE56D94-2312-B8BF-A38E-729B6C11923B}</Project>
+      <Name>Oculus.VR.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Oculus.VR.Scripts.Editor.csproj">
+      <Project>{2C98CDEA-E3F2-52A7-009E-B51055C50FE7}</Project>
+      <Name>Oculus.VR.Scripts.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.Multiplayer.MLAPI.Runtime.csproj">
+      <Project>{2979549F-2761-EC29-0C1F-D1601FA1E4A5}</Project>
+      <Name>Unity.Multiplayer.MLAPI.Runtime</Name>
+    </ProjectReference>
+    <ProjectReference Include="Oculus.VR.csproj">
+      <Project>{23E871E4-1E29-37F1-3C13-15A9D64E0B22}</Project>
+      <Name>Oculus.VR</Name>
+    </ProjectReference>
     <ProjectReference Include="PhotonChat.csproj">
       <Project>{D95FDBFD-9C3C-FB33-5DD8-2E50F1F66C22}</Project>
       <Name>PhotonChat</Name>
+    </ProjectReference>
+    <ProjectReference Include="Oculus.Platform.Editor.csproj">
+      <Project>{74833A20-1A67-3026-E685-68384BF9C97E}</Project>
+      <Name>Oculus.Platform.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="PhotonUnityNetworking.Utilities.Culling.Editor.csproj">
       <Project>{7B5611EA-FB61-D521-95AA-4ABA0FE7E1E6}</Project>
@@ -1043,6 +1051,10 @@
     <ProjectReference Include="PhotonUnityNetworking.Editor.csproj">
       <Project>{651B84DD-4D73-F277-A259-99027FCEACD3}</Project>
       <Name>PhotonUnityNetworking.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.Multiplayer.MLAPI.Prototyping.csproj">
+      <Project>{926ED3C6-EACA-7443-373E-BA44E114F74F}</Project>
+      <Name>Unity.Multiplayer.MLAPI.Prototyping</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
