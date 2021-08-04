@@ -21,7 +21,11 @@ public class RowingForceNew : MonoBehaviour
 
     // Start is called before the first frame update
     void Start() {
-        drag = GetComponent<ConstantForce>();
+        if (LobbyManager.VR) {
+            HandR = GameObject.FindGameObjectWithTag("HandR");
+            HandL = GameObject.FindGameObjectWithTag("HandL");
+            //drag = GetComponent<ConstantForce>();
+        }
         startRaftPoint = raftRig.transform.position;
     }
 
@@ -78,28 +82,31 @@ public class RowingForceNew : MonoBehaviour
                 raftRig.velocity += new Vector3(0, 0, 0);
             }
         }
-        if (raftRig.transform.rotation.y >= 0.08f || raftRig.transform.rotation.y <= -0.08f) {
+        if (raftRig.transform.rotation.y <= -0.08f) {
             raftRig.freezeRotation = true;
             raftRig.angularVelocity = Vector3.zero;
             raftRig.transform.Rotate(new Vector3(raftRig.transform.rotation.x, 0.1f, raftRig.transform.rotation.z));
             //raftRig.constraints &= ~RigidbodyConstraints.FreezeRotationY;
             //raftRig.angularVelocity = Vector3.zero;
         }
-
-
-    }
+        else if (raftRig.transform.rotation.y >= 0.08f) {
+            raftRig.freezeRotation = true;
+            raftRig.angularVelocity = Vector3.zero;
+            raftRig.transform.Rotate(new Vector3(raftRig.transform.rotation.x, -0.1f, raftRig.transform.rotation.z));
+        }
+        }
     void torqueForce() {
         if (raftRig.transform.rotation.y < 0.08f && raftRig.transform.rotation.y > -0.08f) {
            
             if (impulseVector.x < 0 || (raftRig.transform.position.x - impulseVector.x) > 0.1) {
                 // raftRig.transform.Rotate(new Vector3(raftRig.transform.rotation.x, -0.1f, raftRig.transform.rotation.z));
-                raftRig.AddTorque(-impulseVector / (Multiplier / 16), ForceMode.Impulse);
+                raftRig.AddTorque(new Vector3(0, -0.8f, 0), ForceMode.Impulse);
                 raftRig.constraints &= ~RigidbodyConstraints.FreezeRotationY;
 
             }
             else
             if (impulseVector.x > 0 || (raftRig.transform.position.x - impulseVector.x) < 0.1) {
-                raftRig.AddTorque(impulseVector / (Multiplier / 16), ForceMode.Impulse);
+                raftRig.AddTorque(new Vector3(0, 0.8f, 0), ForceMode.Impulse);
                 raftRig.constraints &= ~RigidbodyConstraints.FreezeRotationY;
                 //raftRig.transform.Rotate(new Vector3(raftRig.transform.rotation.x, 0.1f, raftRig.transform.rotation.z));
             }

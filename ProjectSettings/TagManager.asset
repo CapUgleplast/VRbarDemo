@@ -10,6 +10,13 @@ TagManager:
   - Destroyer
   - Paddle
   - Axe
+  - FixPoint2
+  - FixPoint1
+  - FixPoint4
+  - FixPoint3
+  - Raft
+  - HandR
+  - HandL
   layers:
   - Default
   - TransparentFX

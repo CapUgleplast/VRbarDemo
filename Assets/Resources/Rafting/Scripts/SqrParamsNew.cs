@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Photon.Pun;
 /*
 [Serializable]
 public struct SpawnerClass
@@ -27,16 +28,17 @@ public class SqrParamsNew : MonoBehaviour
 
     // Start is called before the first frame update
     void Start() {
-        InvokeRepeating("DoSpawn", 0, SpawnInterval);
-        //DoSpawn();
+       
+            InvokeRepeating("DoSpawn", 0, SpawnInterval);
+            //DoSpawn();
+       
     }
     void DoSpawn() {
         int MapChance;
         MapChance = UnityEngine.Random.Range(0, Sqrs.Count);
-        var tmpSqr = Instantiate(Sqrs[MapChance], SpawnPos, Quaternion.identity);
+        var tmpSqr = PhotonNetwork.Instantiate("Rafting/Prefabs/FuncDemo2/" + Sqrs[MapChance].name, SpawnPos, Quaternion.identity);
         //Sqrs[MapChance].SetActive(true);
-        tmpSqr.transform.SetParent(gameObject.transform);
-
+        tmpSqr.transform.SetParent(p: gameObject.transform);
         int SpawnChance;
         int SpawnPointChance = 0;
         int SpawnTimesChance;
@@ -49,7 +51,7 @@ public class SqrParamsNew : MonoBehaviour
                     for (var j = 0; j <= SpawnTimesChance; j++) {
                         SpawnPointChance = UnityEngine.Random.Range(0, SpawnPool0[i].childCount - 1);
                         //SpawnPointChance = UnityEngine.Random.Range(0, SpawnerClass.PointsPool[i]);
-                        var tmpObject = Instantiate(Obstacles[i], SpawnPool0[i].GetChild(SpawnPointChance).transform);
+                        var tmpObject = PhotonNetwork.Instantiate("Rafting/Prefabs/FuncDemo/" + Obstacles[i].name, SpawnPool0[i].GetChild(SpawnPointChance).transform.position, Quaternion.identity);
                         tmpObject.transform.SetParent(tmpSqr.transform);
                     }
                 }
@@ -63,7 +65,7 @@ public class SqrParamsNew : MonoBehaviour
                     for (var j = 0; j <= SpawnTimesChance; j++) {
                         SpawnPointChance = UnityEngine.Random.Range(0, SpawnPool1[i].childCount - 1);
                         //SpawnPointChance = UnityEngine.Random.Range(0, SpawnerClass.PointsPool[i]);
-                        var tmpObject = Instantiate(Obstacles[i], SpawnPool1[i].GetChild(SpawnPointChance).transform);
+                        var tmpObject = PhotonNetwork.Instantiate("Rafting/Prefabs/FuncDemo/" + Obstacles[i].name, SpawnPool1[i].GetChild(SpawnPointChance).transform.position, Quaternion.identity);
                         tmpObject.transform.SetParent(tmpSqr.transform);
                     }
                 }
@@ -77,7 +79,7 @@ public class SqrParamsNew : MonoBehaviour
                     for (var j = 0; j <= SpawnTimesChance; j++) {
                         SpawnPointChance = UnityEngine.Random.Range(0, SpawnPool2[i].childCount - 1);
                         //SpawnPointChance = UnityEngine.Random.Range(0, SpawnerClass.PointsPool[i]);
-                        var tmpObject = Instantiate(Obstacles[i], SpawnPool2[i].GetChild(SpawnPointChance).transform);
+                        var tmpObject = PhotonNetwork.Instantiate("Rafting/Prefabs/FuncDemo/" + Obstacles[i].name, SpawnPool2[i].GetChild(SpawnPointChance).transform.position, Quaternion.identity);
                         tmpObject.transform.SetParent(tmpSqr.transform);
                     }
                 }
