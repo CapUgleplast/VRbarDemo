@@ -1041,6 +1041,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4852660449184121221}
   - component: {fileID: 2975463529809162901}
+  - component: {fileID: 7717799172266346232}
   m_Layer: 0
   m_Name: PaddleAnchor
   m_TagString: Paddle
@@ -1074,6 +1075,19 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.08, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!65 &7717799172266346232
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4140198314889057152}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &4361758400977718802
 GameObject:
@@ -1434,6 +1448,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2992276713762849868}
   - component: {fileID: 4869613262499526492}
+  - component: {fileID: 2579552345624387653}
   m_Layer: 0
   m_Name: PaddleAnchor
   m_TagString: Paddle
@@ -1468,6 +1483,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.08, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!65 &2579552345624387653
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6028735814334486089}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &6413467302669682608
 GameObject:
   m_ObjectHideFlags: 0
@@ -1501,7 +1529,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6413467302669682608}
   m_LocalRotation: {x: 0.5, y: -0.5, z: 0.5, w: 0.5}
-  m_LocalPosition: {x: -0.443, y: 0.060000002, z: 0.756}
+  m_LocalPosition: {x: -0.443, y: 0.69, z: 0.756}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4852660449184121221}
@@ -2444,7 +2472,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   raftRig: {fileID: 6414526376653240643}
   raftDrag: 5
-  Multiplier: 18
+  Multiplier: 10
   HandL: {fileID: 769746071929139993}
   HandR: {fileID: 769746071802169418}
   freq: 0.2
@@ -3017,7 +3045,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  editorGrabbable: {fileID: 7776201545118711526}
+  editorGrabbable: {fileID: 0}
 --- !u!114 &8528784302474304804
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3232,15 +3260,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d72883ff86b90224cbeb289de4575134, type: 3}
---- !u!1 &7726884020373737326 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3620772960747855851, guid: d72883ff86b90224cbeb289de4575134,
-    type: 3}
-  m_PrefabInstance: {fileID: 6414526377121534085}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &7726884020373737327 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3620772960747855850, guid: d72883ff86b90224cbeb289de4575134,
+    type: 3}
+  m_PrefabInstance: {fileID: 6414526377121534085}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &7726884020373737326 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3620772960747855851, guid: d72883ff86b90224cbeb289de4575134,
     type: 3}
   m_PrefabInstance: {fileID: 6414526377121534085}
   m_PrefabAsset: {fileID: 0}

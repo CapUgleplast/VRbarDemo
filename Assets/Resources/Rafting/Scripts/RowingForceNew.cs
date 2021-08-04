@@ -37,7 +37,7 @@ public class RowingForceNew : MonoBehaviour
 
     private void OnTriggerStay(Collider other) {
         if (other.tag == "Paddle") {
-            dragOn = false;
+           // dragOn = false;
             tmpPoint = other.transform.position;
             impulseVector = (startPoint - tmpPoint);
             raftRig.AddForce(impulseVector*Multiplier, ForceMode.Impulse);
@@ -100,13 +100,13 @@ public class RowingForceNew : MonoBehaviour
            
             if (impulseVector.x < 0 || (raftRig.transform.position.x - impulseVector.x) > 0.1) {
                 // raftRig.transform.Rotate(new Vector3(raftRig.transform.rotation.x, -0.1f, raftRig.transform.rotation.z));
-                raftRig.AddTorque(new Vector3(0, -0.8f, 0), ForceMode.Impulse);
+                raftRig.AddTorque(new Vector3(0, -0.2f, 0), ForceMode.Impulse);
                 raftRig.constraints &= ~RigidbodyConstraints.FreezeRotationY;
 
             }
             else
             if (impulseVector.x > 0 || (raftRig.transform.position.x - impulseVector.x) < 0.1) {
-                raftRig.AddTorque(new Vector3(0, 0.8f, 0), ForceMode.Impulse);
+                raftRig.AddTorque(new Vector3(0, 0.2f, 0), ForceMode.Impulse);
                 raftRig.constraints &= ~RigidbodyConstraints.FreezeRotationY;
                 //raftRig.transform.Rotate(new Vector3(raftRig.transform.rotation.x, 0.1f, raftRig.transform.rotation.z));
             }

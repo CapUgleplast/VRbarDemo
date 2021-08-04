@@ -1956,9 +1956,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hand: {fileID: 6028725849725292778}
-  grabButton: 4
-  grabAxis: 0
-  squeezeButton: 0
+  grabButton: 0
+  grabAxis: 1
+  squeezeButton: 4
   grabbingCheck: 0
 --- !u!114 &1324382010
 MonoBehaviour:
@@ -2994,9 +2994,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hand: {fileID: 6028725850655206329}
-  grabButton: 4
-  grabAxis: 0
-  squeezeButton: 0
+  grabButton: 0
+  grabAxis: 1
+  squeezeButton: 4
   grabbingCheck: 0
 --- !u!114 &2003012715
 MonoBehaviour:
