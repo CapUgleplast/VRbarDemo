@@ -17,6 +17,9 @@ TagManager:
   - Raft
   - HandR
   - HandL
+  - Crab
+  - Octopus
+  - Fish
   layers:
   - Default
   - TransparentFX
@@ -29,7 +32,7 @@ TagManager:
   - PostProcessing
   - 
   - 
-  - 
+  - TransparentWalls
   - 
   - 
   - 

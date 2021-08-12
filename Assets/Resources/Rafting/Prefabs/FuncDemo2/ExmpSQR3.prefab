@@ -114,7 +114,7 @@ GameObject:
   - component: {fileID: 5923185482125120539}
   - component: {fileID: 5923185482125120538}
   - component: {fileID: 5923185482125120533}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: ShoreL
   m_TagString: Untagged
   m_Icon: {fileID: 0}

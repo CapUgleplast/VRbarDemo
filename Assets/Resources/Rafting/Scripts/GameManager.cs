@@ -13,7 +13,7 @@ public class GameManager : MonoBehaviourPunCallbacks
     public GameObject Raft;
     private bool VRbuild;
     public GameObject OVRcontroller;
-    private GameObject raftParent;
+    public GameObject raftParent;
     public GameObject SqrSpawner;
     public GameObject StartPanel;
     public GameObject StartPanelVR;
@@ -46,32 +46,32 @@ public class GameManager : MonoBehaviourPunCallbacks
 
         if (!VRbuild) {
             SqrSpawner.SetActive(true);
-            //raftParent = PhotonNetwork.Instantiate("Rafting/Prefabs/FuncDemo2/" + Raft.name, new Vector3(0, -0.42f, 0), Quaternion.identity);
-            //PV.RPC("RPC_VRparent", RpcTarget.All, raftParent, OVRcontroller);
+            raftParent = PhotonNetwork.Instantiate("Rafting/Prefabs/FuncDemo2/" + Raft.name, new Vector3(0, -0.42f, 0), Quaternion.identity);
+            //PV.RPC("RPC_VRparent", RpcTarget.Others, raftParent);
             //OVRcontroller.transform.SetParent(raftParent.transform);
-            var j = Random.Range(1, 2);
+            
+               //PhotonNetwork.Instantiate("Rafting/Prefabs/FuncDemo2/" + Ape.name, new Vector3(-30, 1, 10), Quaternion.identity);
 
-            if (j == 1) {
-                PhotonNetwork.Instantiate("Rafting/Prefabs/FuncDemo2/" + Ape.name, new Vector3(-30, 1, 30), Quaternion.identity);
+           
+                PhotonNetwork.Instantiate("Rafting/Prefabs/FuncDemo2/" + Fish.name, new Vector3(-9, 0, 8), Quaternion.identity);
 
-            }
-            else if (j == 2) {
-                PhotonNetwork.Instantiate("Rafting/Prefabs/FuncDemo2/" + Fish.name, new Vector3(-9, 0, 28), Quaternion.identity);
-
-            }
+            
         }
         else if (VRbuild) {
-            if (PhotonNetwork.PlayerListOthers.Length == 1) {
+            if (VRsHere == false) {
                 //raftParent = PhotonView.Find(1001).gameObject;
-               // raftParent = GameObject.FindGameObjectWithTag("Raft");
+                // raftParent = GameObject.FindGameObjectWithTag("Raft");
                 //PV.RPC("RPC_VRparent", RpcTarget.All, raftParent);
-                raftParent = PhotonNetwork.Instantiate("Rafting/Prefabs/FuncDemo2/" + Raft.name, new Vector3(0, -0.42f, 0), Quaternion.identity);
-                OVRcontroller.transform.SetParent(raftParent.transform);
-                VRsHere = true;
-            }
-            else {
+                // PV.RPC("RPC_VRparent", RpcTarget.All, VRsHere);
                 raftParent = GameObject.FindWithTag("Raft");
-                OVRcontroller.transform.SetParent(raftParent.transform);
+                //raftParent = PhotonNetwork.Instantiate("Rafting/Prefabs/FuncDemo2/" + Raft.name, new Vector3(0, -0.42f, 0), Quaternion.identity);
+                //OVRcontroller.transform.SetParent(raftParent.transform);
+                //PV.RPC("RPC_VRparent", RpcTarget.All, VRsHere);
+                //VRsHere = true;
+            }
+            else if (VRsHere == true) {
+               // raftParent = GameObject.FindWithTag("Raft");
+                //OVRcontroller.transform.SetParent(raftParent.transform);
             }
         }
     }
@@ -79,16 +79,16 @@ public class GameManager : MonoBehaviourPunCallbacks
     // Update is called once per frame
     void Update()
     {
-        /*if (VRbuild) {
-            if (raftParent == null) {
-                //raftParent = PhotonView.Find(1001).gameObject;
-                raftParent = GameObject.FindGameObjectWithTag("Raft");
-                //PV.RPC("RPC_VRparent", RpcTarget.All, raftParent);
-
-                OVRcontroller.transform.SetParent(raftParent.transform);
-                VRsHere = true;
-            }
-        }*/
+        /*if (VRbuild && NotReady == false) {
+            raftParent = GameObject.FindWithTag("Raft");
+            //raftParent = PhotonView.Find(1001).gameObject;
+            raftParent = GameObject.FindGameObjectWithTag("Raft");
+            //PV.RPC("RPC_VRparent", RpcTarget.All, raftParent);
+            Debug.Log("parent");
+            OVRcontroller.transform.SetParent(raftParent.transform);
+                //VRsHere = true;
+            }*/
+        
         if (NotReady == true && !VRbuild) {
             time -= Time.deltaTime;
             InfoT.text = time.ToString();
@@ -118,8 +118,11 @@ public class GameManager : MonoBehaviourPunCallbacks
 
     [PunRPC]
     void RPC_VRparent(GameObject raftParent) {
+        //VRsHere = true;
+        
         OVRcontroller.transform.SetParent(raftParent.transform);
-        Debug.Log("parent");
+        //base.photonView.RequestOwnership();
+        //Debug.Log("parent");
     }
     [PunRPC]
     void RPC_Wait() {

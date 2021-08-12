@@ -21,6 +21,7 @@ public class SqrParamsNew : MonoBehaviour
     public List<Transform> SpawnPool0;
     public List<Transform> SpawnPool1;
     public List<Transform> SpawnPool2;
+    public List<int> SpawnedPoints;
     public Vector3 SpawnPos;
     
     public float SpawnInterval;
@@ -28,8 +29,8 @@ public class SqrParamsNew : MonoBehaviour
 
     // Start is called before the first frame update
     void Start() {
-       
-            InvokeRepeating("DoSpawn", 0, SpawnInterval);
+        InvokeSpawn();
+            
             //DoSpawn();
        
     }
@@ -50,11 +51,19 @@ public class SqrParamsNew : MonoBehaviour
                     SpawnTimesChance = UnityEngine.Random.Range(1, 4);
                     for (var j = 0; j <= SpawnTimesChance; j++) {
                         SpawnPointChance = UnityEngine.Random.Range(0, SpawnPool0[i].childCount - 1);
-                        //SpawnPointChance = UnityEngine.Random.Range(0, SpawnerClass.PointsPool[i]);
-                        var tmpObject = PhotonNetwork.Instantiate("Rafting/Prefabs/FuncDemo/" + Obstacles[i].name, SpawnPool0[i].GetChild(SpawnPointChance).transform.position, Quaternion.identity);
-                        tmpObject.transform.SetParent(tmpSqr.transform);
+                        if (!SpawnedPoints.Contains(SpawnPointChance)) {
+                            SpawnedPoints.Add(SpawnPointChance);
+                            //SpawnPointChance = UnityEngine.Random.Range(0, SpawnerClass.PointsPool[i]);
+                            var tmpObject = PhotonNetwork.Instantiate("Rafting/Prefabs/FuncDemo/" + Obstacles[i].name, SpawnPool0[i].GetChild(SpawnPointChance).transform.position, Quaternion.identity);
+                            
+                            tmpObject.transform.SetParent(tmpSqr.transform);
+                        }
+                        /*else {
+                            j--;
+                        }*/
                     }
                 }
+                SpawnedPoints.Clear();
             }
         }
         if (MapChance == 1) {
@@ -64,11 +73,18 @@ public class SqrParamsNew : MonoBehaviour
                     SpawnTimesChance = UnityEngine.Random.Range(1, 4);
                     for (var j = 0; j <= SpawnTimesChance; j++) {
                         SpawnPointChance = UnityEngine.Random.Range(0, SpawnPool1[i].childCount - 1);
-                        //SpawnPointChance = UnityEngine.Random.Range(0, SpawnerClass.PointsPool[i]);
-                        var tmpObject = PhotonNetwork.Instantiate("Rafting/Prefabs/FuncDemo/" + Obstacles[i].name, SpawnPool1[i].GetChild(SpawnPointChance).transform.position, Quaternion.identity);
+                        if (!SpawnedPoints.Contains(SpawnPointChance)) {
+                            SpawnedPoints.Add(SpawnPointChance);
+                            //SpawnPointChance = UnityEngine.Random.Range(0, SpawnerClass.PointsPool[i]);
+                            var tmpObject = PhotonNetwork.Instantiate("Rafting/Prefabs/FuncDemo/" + Obstacles[i].name, SpawnPool1[i].GetChild(SpawnPointChance).transform.position, Quaternion.identity);
                         tmpObject.transform.SetParent(tmpSqr.transform);
+                        }
+                        /*else {
+                            j--;
+                        }*/
                     }
                 }
+                SpawnedPoints.Clear();
             }
         }
         if (MapChance == 2) {
@@ -78,13 +94,24 @@ public class SqrParamsNew : MonoBehaviour
                     SpawnTimesChance = UnityEngine.Random.Range(1, 4);
                     for (var j = 0; j <= SpawnTimesChance; j++) {
                         SpawnPointChance = UnityEngine.Random.Range(0, SpawnPool2[i].childCount - 1);
-                        //SpawnPointChance = UnityEngine.Random.Range(0, SpawnerClass.PointsPool[i]);
-                        var tmpObject = PhotonNetwork.Instantiate("Rafting/Prefabs/FuncDemo/" + Obstacles[i].name, SpawnPool2[i].GetChild(SpawnPointChance).transform.position, Quaternion.identity);
+                        if (!SpawnedPoints.Contains(SpawnPointChance)) {
+                            SpawnedPoints.Add(SpawnPointChance);
+                            //SpawnPointChance = UnityEngine.Random.Range(0, SpawnerClass.PointsPool[i]);
+                            var tmpObject = PhotonNetwork.Instantiate("Rafting/Prefabs/FuncDemo/" + Obstacles[i].name, SpawnPool2[i].GetChild(SpawnPointChance).transform.position, Quaternion.identity);
                         tmpObject.transform.SetParent(tmpSqr.transform);
                     }
+                       /* else {
+                        j--;
+                    }*/
                 }
+                }
+                SpawnedPoints.Clear();
             }
         }
+    }
+
+    void InvokeSpawn() {
+        InvokeRepeating("DoSpawn", 0, SpawnInterval);
     }
 
     // Update is called once per frame

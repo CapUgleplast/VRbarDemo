@@ -265,6 +265,7 @@
     <Compile Include="Assets\Oculus\Spatializer\scripts\ONSPVersion.cs" />
     <Compile Include="Assets\Oculus\Spatializer\scripts\OculusSpatializerUnity.cs" />
     <Compile Include="Assets\Oculus\Spatializer\scripts\helpers\ONSPReflectionZone.cs" />
+    <Compile Include="Assets\PaddleInfluence.cs" />
     <Compile Include="Assets\Photon\PhotonChat\Demos\Common\EventSystemSpawner.cs" />
     <Compile Include="Assets\Photon\PhotonChat\Demos\Common\OnStartDelete.cs" />
     <Compile Include="Assets\Photon\PhotonChat\Demos\Common\TextButtonTransition.cs" />
@@ -282,13 +283,16 @@
     <Compile Include="Assets\Resources\Rafting\Scripts\AxeChop.cs" />
     <Compile Include="Assets\Resources\Rafting\Scripts\AxeHitReaction.cs" />
     <Compile Include="Assets\Resources\Rafting\Scripts\Destroyer.cs" />
+    <Compile Include="Assets\Resources\Rafting\Scripts\EnemyBehavior.cs" />
     <Compile Include="Assets\Resources\Rafting\Scripts\GameManager.cs" />
     <Compile Include="Assets\Resources\Rafting\Scripts\HammerFix.cs" />
     <Compile Include="Assets\Resources\Rafting\Scripts\LobbyManager.cs" />
     <Compile Include="Assets\Resources\Rafting\Scripts\MissChecking.cs" />
     <Compile Include="Assets\Resources\Rafting\Scripts\Move.cs" />
     <Compile Include="Assets\Resources\Rafting\Scripts\OwnershipTransfer.cs" />
+    <Compile Include="Assets\Resources\Rafting\Scripts\PadPower.cs" />
     <Compile Include="Assets\Resources\Rafting\Scripts\RaftDrag.cs" />
+    <Compile Include="Assets\Resources\Rafting\Scripts\RaftParent.cs" />
     <Compile Include="Assets\Resources\Rafting\Scripts\RowingForce.cs" />
     <Compile Include="Assets\Resources\Rafting\Scripts\RowingForceNew.cs" />
     <Compile Include="Assets\Resources\Rafting\Scripts\SqrLife.cs" />
