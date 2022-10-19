@@ -14,9 +14,13 @@ public class SqrLife : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        transform.Translate(Vector3.forward * SqrSpeed * -1f * Time.deltaTime);
+        transform.position += new Vector3(0, 0, -0.01f);
+       /* var step = SqrSpeed * Time.fixedDeltaTime; // calculate distance to move
+        transform.position = Vector3.MoveTowards(transform.position, new Vector3(0, 0, -100), step);*/
+
+        //transform.Translate(Vector3.forward * SqrSpeed * -1f * Time.deltaTime);
         if (Vector3.Distance(this.transform.position, startPos) > DestroyDistance) {
             Destroy(gameObject);
             }

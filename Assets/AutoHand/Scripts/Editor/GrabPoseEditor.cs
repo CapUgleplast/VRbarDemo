@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEditor;
-using UnityEditor.Experimental.SceneManagement;
+
 using UnityEngine;
 
 
@@ -16,7 +16,7 @@ namespace Autohand {
         }
 
         public override void OnInspectorGUI() {
-            if(grabPose.gameObject != null && PrefabStageUtility.GetPrefabStage(grabPose.gameObject) == null){
+            if(grabPose.gameObject != null && UnityEditor.SceneManagement.PrefabStageUtility.GetPrefabStage(grabPose.gameObject) == null){
                 DrawDefaultInspector();
                 EditorUtility.SetDirty(grabPose);
             

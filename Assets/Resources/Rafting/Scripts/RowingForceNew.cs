@@ -9,7 +9,6 @@ public class RowingForceNew : MonoBehaviour
     private Vector3 impulseVector;
     public Rigidbody raftRig;
     public float raftDrag;
-    //public float rot;
     public int Multiplier;
     public GameObject HandL;
     public GameObject HandR;
@@ -24,7 +23,6 @@ public class RowingForceNew : MonoBehaviour
         if (LobbyManager.VR) {
             HandR = GameObject.FindGameObjectWithTag("HandR");
             HandL = GameObject.FindGameObjectWithTag("HandL");
-            //drag = GetComponent<ConstantForce>();
         }
         startRaftPoint = raftRig.transform.position;
     }
@@ -37,14 +35,11 @@ public class RowingForceNew : MonoBehaviour
 
     private void OnTriggerStay(Collider other) {
         if (other.tag == "Paddle") {
-           // dragOn = false;
             tmpPoint = other.transform.position;
             impulseVector = (startPoint - tmpPoint);
             raftRig.AddForce(impulseVector*Multiplier, ForceMode.Impulse);
             torqueForce();
             
-                //raftRig.AddTorque(-impulseVector/(Multiplier/16), ForceMode.Impulse);
-                //raftRig.angularVelocity = -impulseVector;
             startPoint = tmpPoint;
             if (HandR.GetComponent<Autohand.Demo.XRHandControllerLink>().grabbingCheck == true) {
                 OVRInput.SetControllerVibration(freq, amp, OVRInput.Controller.RTouch);
@@ -67,7 +62,7 @@ public class RowingForceNew : MonoBehaviour
     }
             // Update is called once per frame
         void Update() {
-        //rot = raftRig.transform.rotation.y;
+
         if (dragOn == true) {
             
             if (Vector3.Distance(raftRig.transform.position, new Vector3(raftRig.transform.position.x, raftRig.transform.position.y, startRaftPoint.z)) > 0.01f) {
@@ -86,8 +81,6 @@ public class RowingForceNew : MonoBehaviour
             raftRig.freezeRotation = true;
             raftRig.angularVelocity = Vector3.zero;
             raftRig.transform.Rotate(new Vector3(raftRig.transform.rotation.x, 0.1f, raftRig.transform.rotation.z));
-            //raftRig.constraints &= ~RigidbodyConstraints.FreezeRotationY;
-            //raftRig.angularVelocity = Vector3.zero;
         }
         else if (raftRig.transform.rotation.y >= 0.08f) {
             raftRig.freezeRotation = true;
@@ -99,7 +92,6 @@ public class RowingForceNew : MonoBehaviour
         if (raftRig.transform.rotation.y < 0.08f && raftRig.transform.rotation.y > -0.08f) {
            
             if (impulseVector.x < 0 || (raftRig.transform.position.x - impulseVector.x) > 0.1) {
-                // raftRig.transform.Rotate(new Vector3(raftRig.transform.rotation.x, -0.1f, raftRig.transform.rotation.z));
                 raftRig.AddTorque(new Vector3(0, -0.2f, 0), ForceMode.Impulse);
                 raftRig.constraints &= ~RigidbodyConstraints.FreezeRotationY;
 
@@ -108,12 +100,11 @@ public class RowingForceNew : MonoBehaviour
             if (impulseVector.x > 0 || (raftRig.transform.position.x - impulseVector.x) < 0.1) {
                 raftRig.AddTorque(new Vector3(0, 0.2f, 0), ForceMode.Impulse);
                 raftRig.constraints &= ~RigidbodyConstraints.FreezeRotationY;
-                //raftRig.transform.Rotate(new Vector3(raftRig.transform.rotation.x, 0.1f, raftRig.transform.rotation.z));
             }
         }
        
 
-        //raftRig.freezeRotation = true;
+
 
     }
 
