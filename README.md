@@ -1,6 +1,6 @@
 # VRbarDemo
 
-Проект являет собой MVP(Minimum Vitable Project) одного корпоративных VR проектов.
+Проект являет собой MVP(Minimum Vitable Project) одного из корпоративных VR проектов.
 
 Подробнее о геймплее проекта можно узнать в .doc файле RaftingScenarioDocumentation2.0.docx по пути VRbarMVP/Screenshots/RaftingScenarioDocumentation2.0.docx
 
